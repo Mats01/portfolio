@@ -1,82 +1,129 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>FarMoreDifferent (DalekoRazlicijtij) a list of personal projects</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <title>FarMoreDifferent (DalekoRazlicijtij) a list of personal projects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="mystyle.css">
+  <style>
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="mystyle.css">
-<style>
-
-</style>
+  </style>
 </head>
+
 <body>
-    <div class="hero">
-        <h1>Here you can see a timeline of some interesting projects I've been working on</h1>
+  <script>
+    function menuShowerer(x) {
+      x.classList.toggle("change");
+      if ($(".main_aside").css('display') == 'none')
+        $(".main_aside").css('display', 'unset');
+      else {
+        $(".main_aside").css('display', 'none');
+
+      }
+    }
+
+    function menuHider() {
+      $(".main_aside").css('display', 'none');
+
+
+    }
+  </script>
+
+  <main>
+    <div onclick="menuShowerer(this)" id="nav_hamburger">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <aside role="complementary" class="main_aside">
+      <div class="asside_wrapper">
+        <h4>NAVIGATION</h4>
+        <nav role="navigation" class="navbar">
+          <ul class="nav navbar-nav">
+            <li class="active_li"><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <footer>
+          <h1 class="footer_title">Far</h1>
+          <h1 class="footer_title">More</h1>
+          <h1 class="footer_title">Different</h1>
+          <p>Instagram.Twitter.GitHub</p>
+        </footer>
+      </div>
+    </aside>
+    <div class="row d-flex">
+      <div class="col-xl-8 py-5 px-md-5">
+        <div class="row pt-md-6">
+          <div class="col-md-12">
+            <div class="hero">
+              <h1>Here you can see a timeline of some interesting projects I've been working on</h1>
+            </div>
+
+            <div class="timeline">
+
+              <div class="timeline_container right">
+                <div class="timeline_content">
+                  <h2>2015</h2>
+                  <h3>Pomodoro Webapp</h3>
+                  <a href="https://pomodorowebapp.appspot.com/" target="_blank">https://pomodorowebapp.appspot.com/</a>
+                  <p><span class="tech_label">tech:</span> Google App Engine (Python)</p>
+                </div>
+              </div>
+
+              <div class="timeline_container right">
+                <div class="timeline_content">
+                  <h2>2018</h2>
+                  <h3>Mismatched</h3>
+                  <a href="https://mismatchedgame.com/" target="_blank">https://mismatchedgame.com/</a>
+                  <p>Group project</p>
+                  <p><span class="tech_label">tech:</span> Django app, hosted on Heorku</p>
+                </div>
+              </div>
+
+              <div class="timeline_container right">
+                <div class="timeline_content">
+                  <h2>2018</h2>
+                  <h3>Reversed Citations Needed</h3>
+                  <a href="https://reversedcitationsneeded.farmoredifferent.com/"
+                    target="_blank">https://reversedcitationsneeded.farmoredifferent.com/</a>
+                  <p><span class="tech_label">tech:</span> Progressive WebApp</p>
+                </div>
+              </div>
+
+              <div class="timeline_container right">
+                <div class="timeline_content">
+                  <h2>2020</h2>
+                  <h3>CSS color game</h3>
+                  <a href="https://csscolorgame.farmoredifferent.com/"
+                    target="_blank">https://csscolorgame.farmoredifferent.com/</a>
+                  <p>Group project</p>
+                  <p><span class="tech_label">tech:</span> JavaScript (front-end only)</p>
+                </div>
+              </div> <!-- hero -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 sidebar ftco-animate bg-light pt-5">
+        <div class="sidebar-box pt-md-4">
+          <p>test</p>
+        </div>
+      </div>
     </div>
 
-<div class="timeline">
-  
-  <div class="timeline_container right">
-    <div class="timeline_content">
-      <h2>2015</h2>
-      <h3>Pomodoro Webapp</h3>
-      <a href="https://pomodorowebapp.appspot.com/" target="_blank">https://pomodorowebapp.appspot.com/</a>
-      <p><b>tech:</b> Google App Engine Python</p>
-    </div>
-  </div>
-  
-  <div class="timeline_container right">
-    <div class="timeline_content">
-      <h2>2018</h2>
-      <h3>Mismatched</h3>
-      <a href="https://mismatchedgame.com/" target="_blank">https://mismatchedgame.com/</a>
-      <p>Group project</p>
-      <p><b>tech:</b> Django app, hosted on Heorku</p>
-    </div>
-  </div>
-
-  <div class="timeline_container right">
-    <div class="timeline_content">
-      <h2>2018</h2>
-      <h3>Reversed Citations Needed</h3>
-      <a href="https://reversedcitationsneeded.farmoredifferent.com/" target="_blank">https://reversedcitationsneeded.farmoredifferent.com/</a>
-      <p><b>tech:</b> Progressive WebApp</p>
-    </div>
-  </div>
-
-  <div class="timeline_container right">
-    <div class="timeline_content">
-      <h2>2020</h2>
-      <h3>CSS color game</h3>
-      <a href="https://csscolorgame.farmoredifferent.com/" target="_blank">https://csscolorgame.farmoredifferent.com/</a>
-      <p>Group project</p>
-      <p><b>tech:</b> JavaScript (front-end only)</p>
-    </div>
-  </div>
-</div>
+  </main>
 
 </body>
+
 </html>
