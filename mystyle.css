@@ -322,6 +322,7 @@ footer {
   .asside_wrapper{
     height: 100vh;
     position: fixed;
+    
   }
 
   .row.d-flex {
@@ -367,5 +368,9 @@ footer {
     grid-template-columns: 100%;
   }
 
+  footer {
+    bottom: 8vh;
+
+  }
 
 }
