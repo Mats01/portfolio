@@ -7,6 +7,7 @@ body {
   background-color: white;
   font-family: Helvetica, sans-serif;
   max-width: 99vw;
+  overflow-x: hidden;
 
 }
 
@@ -17,7 +18,7 @@ h1 {
 
 h2 {
   font-family: Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 h3 {
@@ -27,6 +28,7 @@ h3 {
 a {
   font-family: 'Roboto Mono', monospace;
   color: cadetblue;
+  overflow: hidden;
 }
 
 a:visited {
@@ -236,7 +238,7 @@ footer {
 }
 
 .contact_container {
-  margin: 6vh auto 0 auto;
+  margin: 8vh auto 0 auto;
 }
 
 .contact_gird {
@@ -274,7 +276,7 @@ footer {
   }
 
   .main_aside {
-
+    width: 220px;
     display: none;
   }
 
@@ -285,13 +287,46 @@ footer {
 
 @media screen and (max-width: 680px) {
 
-  .main_aside {
+  body{
+    max-width: 99vw;
+    font-size: 10px;
+  }
+  h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+  }
+  
+  h2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.1rem;
+  }
+  
+  h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+  }
+  
+  a {
+    font-family: 'Roboto Mono', monospace;
+    color: cadetblue;
+    overflow: hidden;
+  }
 
+  .main_aside {
+    height: 100%;
+    position: fixed;
     display: none;
+    background-color: white;
+  z-index: 2;
+  }
+  .asside_wrapper{
+    height: 100vh;
+    position: fixed;
   }
 
   .row.d-flex {
-    max-width: unset;
+    max-width: calc(99vw );
+    margin: auto;
   }
 
   /* Place the timelime to the left */
