@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="htmIncluder.js"></script>
 
   <link rel="stylesheet" href="mystyle.css">
   <style>
@@ -37,6 +38,10 @@
 
 
     }
+
+    $(document).ready(()=>{
+      includeHTML();
+    });
   </script>
 
   <main>
@@ -46,21 +51,8 @@
       <div class="bar3"></div>
     </div>
     <aside role="complementary" class="main_aside">
-      <div class="asside_wrapper">
-        <h4>NAVIGATION</h4>
-        <nav role="navigation" class="navbar">
-          <ul class="nav navbar-nav">
-            <li class="active_li"><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Articles</a></li>
-          </ul>
-        </nav>
-        <footer>
-          <h1 class="footer_title">Far</h1>
-          <h1 class="footer_title">More</h1>
-          <h1 class="footer_title">Different</h1>
-          <p>currently studying @ FER</p>
-        </footer>
+      <div class="asside_wrapper" w3-include-html="nav.html">
+       
       </div>
     </aside>
     <div class="row d-flex">
