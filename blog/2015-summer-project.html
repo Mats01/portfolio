@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FarMoreDifferent (DalekoRazlicijtij) a list of personal projects</title>
+    <meta charset="utf-8">
+
+    <!-- Start of SEO data-->
+    <meta name="title" content="My 2015 Summer Project">
+    <meta name="description" content="A story about how I made my first webapp on Google App Engine. ">
+    <meta name="keywords" content="google,googleappengine,pyhon,coding,developer,blog">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Matej Butković">
+
+    <!-- End of SEO data -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
+    <link rel="stylesheet" href="../mystyle.css">
+    <style>
+        .blog_content {
+            margin: 8vh 5px;
+            width: 100%;
+
+        }
+
+        .blog_content img {
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 900px) {
+            .blog_content {
+                margin: auto;
+
+            }
+        }
+
+        @media screen and (max-width: 680px) {
+            .blog_content {}
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function menuShowerer(x) {
+            x.classList.toggle("change");
+            if ($(".main_aside").css('display') == 'none')
+                $(".main_aside").css('display', 'unset');
+            else {
+                $(".main_aside").css('display', 'none');
+
+            }
+        }
+
+        function menuHider() {
+            $(".main_aside").css('display', 'none');
+
+
+        }
+
+        function readTextFile(file) {
+            let allText;
+            let rawFile = new XMLHttpRequest();
+            rawFile.open("GET", file, false);
+            rawFile.onreadystatechange = function () {
+                if (rawFile.readyState === 4) {
+                    if (rawFile.status === 200 || rawFile.status == 0) {
+                        allText = rawFile.responseText;
+                        // alert(allText);
+
+
+                    }
+                }
+            }
+            rawFile.send(null);
+            return allText;
+        }
+
+        $(document).ready(() => {
+            let content = readTextFile(
+                "https://raw.githubusercontent.com/Mats01/portfolio/master/blog/My_2015_summer_project.md");
+            let converter = new showdown.Converter(),
+                html = converter.makeHtml(content);
+            // alert(html);
+            $(".blog_content").append(html);
+        });
+    </script>
+
+    <main>
+        <div onclick="menuShowerer(this)" id="nav_hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <aside role="complementary" class="main_aside">
+            <div class="asside_wrapper">
+                <h4>NAVIGATION</h4>
+                <nav role="navigation" class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active_li"><a href="../index.html">Home</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <footer>
+                    <h1 class="footer_title">Far</h1>
+                    <h1 class="footer_title">More</h1>
+                    <h1 class="footer_title">Different</h1>
+                    <p>currently studying @ FER</p>
+                </footer>
+            </div>
+        </aside>
+        <div class="row d-flex">
+            <div class="col-xl-8 py-5 px-md-5">
+                <div class="row pt-md-6">
+                    <div class="col-md-12">
+                        <div class="blog_content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 sidebar ftco-animate bg-light pt-5">
+                <div class="sidebar-box pt-md-4">
+                    <p>A couple of articles explaining the apps are coming!</p>
+
+                    <div class="single_article">
+                        <h3>My 2015 summer project</h3>
+                        <p>The Pomodoro webapp</p>
+                        <div><span>2.9.2019.</span></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

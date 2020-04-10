@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FarMoreDifferent (DalekoRazlicijtij) a list of personal projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        .articles_wrapper {
+            margin: 8vh 5px;
+            width: 100%;
+
+        }
+
+        .single_article {
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .single_article span {
+            color: cadetblue;
+            font-family: 'Roboto Mono', monospace;
+
+        }
+
+        @media screen and (max-width: 900px) {
+            .articles_wrapper {
+                margin: auto;
+
+            }
+
+            .single_article {
+                max-width: unset;
+
+            }
+        }
+
+        @media screen and (max-width: 680px) {
+            .articles_wrapper {
+
+            
+            }
+            .single_article{
+                width: 80%;
+                margin: auto;
+            }
+
+
+
+        
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function menuShowerer(x) {
+            x.classList.toggle("change");
+            if ($(".main_aside").css('display') == 'none')
+                $(".main_aside").css('display', 'unset');
+            else {
+                $(".main_aside").css('display', 'none');
+
+            }
+        }
+
+        function menuHider() {
+            $(".main_aside").css('display', 'none');
+
+
+        }
+    </script>
+
+    <main>
+        <div onclick="menuShowerer(this)" id="nav_hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <aside role="complementary" class="main_aside">
+            <div class="asside_wrapper">
+                <h4>NAVIGATION</h4>
+                <nav role="navigation" class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active_li"><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <footer>
+                    <h1 class="footer_title">Far</h1>
+                    <h1 class="footer_title">More</h1>
+                    <h1 class="footer_title">Different</h1>
+                    <p>currently studying @ FER</p>
+                </footer>
+            </div>
+        </aside>
+        <div class="row d-flex">
+            <div class="col-xl-8 py-5 px-md-5">
+                <div class="row pt-md-6">
+                    <div class="col-md-12">
+                        <div class="articles_wrapper">
+                            <div class="single_article">
+                                
+
+                            <div class="single_article">
+                                <h3><a href="blog/2015-summer-project.html">My 2015 summer project</a></h3>
+                                <p>...which turned into my highschool side project.
+                                    <br>
+                                    On making the Pomodoro webapp and getting
+                                    introduced to web developement.
+                                    <br>
+                                    Here I share some of what I've learned then,
+                                    but this is not a tutorial, it's just a look back to
+                                    my first days coding.
+
+
+                                </p>
+
+                                <div><span>2.9.2019.</span></div>
+
+                            </div>
+
+                            <div class="single_article">
+                                <h3><a href="blog/Reversed_Citations_Needed_app.html">Reversed Citations Needed app</a></h3>
+                                <p>
+                                    Making a simple PWA in a week: how to quickly get form idea to execution. 
+
+                                </p>
+
+                                <div><span>12.9.2019.</span></div>
+
+                            </div>
+
+                          
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
