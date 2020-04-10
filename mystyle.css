@@ -56,6 +56,9 @@ h3.myheading>a {
 .navbar a:visited {
   color: cadetblue;
 }
+.sidebar{
+  min-height: 100vh;
+}
 
 
 

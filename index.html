@@ -38,10 +38,6 @@
 
 
     }
-
-    $(document).ready(()=>{
-      includeHTML();
-    });
   </script>
 
   <main>
@@ -51,8 +47,8 @@
       <div class="bar3"></div>
     </div>
     <aside role="complementary" class="main_aside">
-      <div class="asside_wrapper" w3-include-html="nav.html">
-       
+      <div class="asside_wrapper" my_include_html="nav" active_link="Home">
+
       </div>
     </aside>
     <div class="row d-flex">
@@ -88,8 +84,7 @@
                 <div class="timeline_content">
                   <h2>2018</h2>
                   <h3>Reversed Citations Needed</h3>
-                  <a href="https://rcn.farmoredifferent.com/"
-                    target="_blank">https://rcn.farmoredifferent.com/</a>
+                  <a href="https://rcn.farmoredifferent.com/" target="_blank">https://rcn.farmoredifferent.com/</a>
                   <p><span class="tech_label">tech:</span> Progressive WebApp</p>
                 </div>
               </div>
@@ -109,8 +104,8 @@
         </div>
       </div>
       <div class="col-xl-4 sidebar ftco-animate bg-light pt-5">
-        <div class="sidebar-box pt-md-4">
-          <p>A couple of articles explaining the apps are coming!</p>
+
+        <div class="sidebar-box pt-md-4" my_include_html="sidebar">
         </div>
       </div>
     </div>

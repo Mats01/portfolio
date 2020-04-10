@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
+
+    <script src="../htmIncluder.js"></script>
+
     <link rel="stylesheet" href="../mystyle.css">
     <style>
         .blog_content {
@@ -106,20 +109,7 @@
             <div class="bar3"></div>
         </div>
         <aside role="complementary" class="main_aside">
-            <div class="asside_wrapper">
-                <h4>NAVIGATION</h4>
-                <nav role="navigation" class="navbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active_li"><a href="index.html">Home</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <footer>
-                    <h1 class="footer_title">Far</h1>
-                    <h1 class="footer_title">More</h1>
-                    <h1 class="footer_title">Different</h1>
-                    <p>currently studying @ FER</p>
-                </footer>
+            <div class="asside_wrapper" my_include_html="article_nav">
             </div>
         </aside>
         <div class="row d-flex">
@@ -133,15 +123,7 @@
                 </div>
             </div>
             <div class="col-xl-4 sidebar ftco-animate bg-light pt-5">
-                <div class="sidebar-box pt-md-4">
-                    <p>A couple of articles explaining the apps are coming!</p>
-
-                    <div class="single_article">
-                        <h3>My 2015 summer project</h3>
-                        <p>The Pomodoro webapp</p>
-                        <div><span>2.9.2019.</span></div>
-
-                    </div>
+                <div class="sidebar-box pt-md-4" my_include_html="sidebar">
                 </div>
             </div>
         </div>
