@@ -18,47 +18,9 @@
 
   <link rel="stylesheet" href="mystyle.css">
   <style>
-    .articles_wrapper {
-      margin: 8vh 5px;
-      width: 100%;
+    @media screen and (max-width: 900px) {}
 
-    }
-
-    .single_article {
-      max-width: 600px;
-      margin-bottom: 40px;
-    }
-
-    .single_article span {
-      color: cadetblue;
-      font-family: 'Roboto Mono', monospace;
-
-    }
-
-    @media screen and (max-width: 900px) {
-      .articles_wrapper {
-        margin: auto;
-
-      }
-
-      .single_article {
-        max-width: unset;
-
-      }
-    }
-
-    @media screen and (max-width: 680px) {
-      .articles_wrapper {}
-
-      .single_article {
-        width: 100%;
-        margin: auto;
-      }
-
-
-
-
-    }
+    @media screen and (max-width: 680px) {}
   </style>
 </head>
 
@@ -134,13 +96,13 @@
           </div>
         </div>
       </div>
-  
 
-    <div class="col-xl-4 sidebar ftco-animate bg-light pt-5">
 
-      <div class="sidebar-box pt-md-4" my_include_html="sidebar">
+      <div class="col-xl-4 sidebar ftco-animate bg-light pt-5">
+
+        <div class="sidebar-box pt-md-4" my_include_html="sidebar">
+        </div>
       </div>
-    </div>
     </div>
 
   </main>

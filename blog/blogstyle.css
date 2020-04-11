@@ -1,0 +1,27 @@
+.blog_content {
+    margin: 8vh 5px;
+    width: 100%;
+
+}
+
+.blog_content pre {
+    background-color: #f7f9fa;
+    border: 1px solid #e6e8eb;
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+.blog_content img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .blog_content {
+        margin: auto;
+
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .blog_content {}
+}
