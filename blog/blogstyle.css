@@ -1,6 +1,9 @@
 .blog_content {
     margin: 8vh 5px;
     width: 100%;
+    max-width: 720px;
+    margin: auto;
+    font-size: 1.1em;
 
 }
 
