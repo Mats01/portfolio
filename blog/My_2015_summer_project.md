@@ -25,21 +25,21 @@ This was a particularly good choice for my first ever project because it had lot
 
 So, having a great sense of what I was trying to accomplish I started planning out my app. The first thing I started thinking of was the flow of information that would happen as the app records the Pomodoros. I then went on to define blueprints for the objects through which I would manipulate this data. The models I had came up with were:
 
-***User***
+### User
 
     - username
     - password_hash
     - email
     - joined (datetime object)
 
-***Pomodoro***
+### Pomodoro
 
     - duration 
     - task 
     - owner (related user object)
     - created
 
-***Settings***
+### Settings
 
     - duration
     - shot_break
