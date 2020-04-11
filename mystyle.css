@@ -296,26 +296,14 @@ footer {
     max-width: 99vw;
     font-size: 10px;
   }
-  h1 {
-    font-family: 'Roboto Mono', monospace;
+
+  p {
+    font-size: 1rem;
+  }
+  pre{
     font-size: 1rem;
   }
   
-  h2 {
-    font-family: Helvetica, sans-serif;
-    font-size: 1.1rem;
-  }
-  
-  h3 {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1rem;
-  }
-  
-  a {
-    font-family: 'Roboto Mono', monospace;
-    color: cadetblue;
-    overflow: hidden;
-  }
 
   .main_aside {
     height: 100%;
@@ -377,5 +365,7 @@ footer {
     bottom: 8vh;
 
   }
+
+  
 
 }
