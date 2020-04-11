@@ -67,8 +67,6 @@ Ok so verison one is done, but the app isn’t yet nearly complete. The next thi
 
 I kept working on the app here and there for a long time after that, and you can find a *final* version from 2019 here:
 [](https://pomodorowebapp.appspot.com/)[https://pomodoro.farmoredifferent.com/](https://pomodoro.farmoredifferent.com/)
-…when I eventually switched to using Toggl.
 
-
-
+...then I eventually switched to using Toggl.
 
