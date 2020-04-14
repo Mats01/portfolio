@@ -23,6 +23,12 @@ h2 {
 
 h3 {
   font-family: 'Roboto Mono', monospace;
+  font-size: 1.1rem;
+}
+
+h4 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.1rem;
 }
 
 a {
@@ -245,6 +251,12 @@ footer {
   margin-top: 50px;
 }
 
+.contact_form_wrapper {
+  max-width: 800px;
+  width: 80vw;
+
+}
+
 .contact_container {
   margin: 8vh auto 0 auto;
 }
@@ -259,6 +271,13 @@ footer {
 .contact_form_wrapper {
   display: block;
   clear: both;
+}
+
+#thanks {
+  margin: 50px 0px;
+  background-color: lightblue;
+  padding: 30px;
+  color: white;
 }
 
 .btn-primary {
@@ -300,6 +319,7 @@ footer {
     display: grid;
     grid-template-columns: 50% 50%;
   }
+
 
   .main_aside {
     width: 220px;
@@ -387,6 +407,10 @@ footer {
   /* Make all right timeline_containers behave like the left ones */
   .right {
     left: 0%;
+  }
+  .contact_form_wrapper{
+    width: 99vw;
+    padding: 10px;
   }
 
   .contact_gird {
