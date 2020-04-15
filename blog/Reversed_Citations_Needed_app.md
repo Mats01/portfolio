@@ -5,8 +5,7 @@ An example of duct-taping together different APIs to give your simple runs-in-th
 
 it took 7 days = a week to make the app, and 1 day make it progressive.
 
-[https://github.com/Mats01/
-reversedCitationsNeeded](https://github.com/Mats01/reversedCitationsNeeded)
+[reversedCitationsNeeded on Github](https://github.com/Mats01/reversedCitationsNeeded)
 
 My first progressive web app.
 
