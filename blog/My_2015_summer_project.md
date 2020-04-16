@@ -8,7 +8,13 @@
 *Note: to understand what I am writing about here it’’s helpful to first take a look at the app:*
 [https://pomodoro.farmoredifferent.com/](https://pomodoro.farmoredifferent.com/)
 
-Firstly, I must say that the reason I started coding my own web app at 15 was entirely thanks to my cousin Marko The Developer. Not only by being a great example of what I could achieve I chose to become a developer, but also by actually telling me to go and make a time tracking app. (*I now realize the importance of staring to learn coding early. Even just getting exposed to these complex concepts early helps a lot* *later on**.)*
+
+
+## An introduction 
+
+I started working on the pomodoro webapp when I was 15, and it was my first coding project of any kind.  I’ve come to find that starting coding early was really usefull to me later on. I really think that even just getting exposed to these complex concepts early helps a lot later on if you are trying to have a career in coding.
+
+I didn't, however, start all of my own. Everybody could use a little push in finding what to do and getting the necessary motivation to start working on *something.* For me this push was  my cousin Marko The Developer. He wasn't only a great example of what I could achieve I chose to become a developer, but he also pushed me in the right direction by actually telling me to go and make a time tracking app.
 
 So, with this direction and encouragement, I got started. 
 
@@ -25,21 +31,21 @@ This was a particularly good choice for my first ever project because it had lot
 
 So, having a great sense of what I was trying to accomplish I started planning out my app. The first thing I started thinking of was the flow of information that would happen as the app records the Pomodoros. I then went on to define blueprints for the objects through which I would manipulate this data. The models I had came up with were:
 
-### User
+***User***
 
     - username
     - password_hash
     - email
     - joined (datetime object)
 
-### Pomodoro
+***Pomodoro***
 
     - duration 
     - task 
     - owner (related user object)
     - created
 
-### Settings
+***Settings***
 
     - duration
     - shot_break
