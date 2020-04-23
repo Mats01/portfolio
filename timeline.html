@@ -1,0 +1,165 @@
+
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <style>
+       
+     
+        .pomodoro{
+            grid-area: pomodoro;
+            background-color: red;
+            
+        }
+        .stylereply{
+            grid-area: stylereply;
+            background-color: purple;
+            
+        }
+        .dental{
+            grid-area: dental;
+            background-color: peachpuff;
+            
+        }
+        .paperkarma{
+            grid-area: paperkarma;
+            background-color: green;
+
+            
+        }
+        .mismatched{
+            grid-area: mismatched;
+            background-color: orangered;
+            
+        }
+        .fwd{
+            grid-area: fwd;
+            background-color: lightblue;
+            
+        }
+        .fwd2{
+            grid-area: fwd2;
+            
+        }
+        .fer{
+            grid-area: fer;
+            background-color: darkblue;
+            
+
+        }
+        .fer2{
+            grid-area: fer2;
+        }
+        .yacht4day{
+            grid-area: yacht4day;
+            background-color: blue;
+            
+        }
+       
+
+        .timeline_vertical{
+            display: grid;
+            width: 90vw;
+            max-width: 300px;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-auto-rows: 50px;
+            margin: auto;
+            height: calc(20 * 50px);
+            grid-template-areas: 
+                "year . . . pomodoro"
+                "year . . . ."
+                "year . . . ."
+                "year . . . ."
+                "year . . . stylereply"
+                "year . . . ."
+                "year . . . ."
+                "year . . . ."
+                "year . . dental paperkarma"
+                "year . . dental paperkarma"
+                "year . . dental paperkarma"
+                "year . . dental paperkarma"
+                "year . . dental ."
+                "year . . dental fwd"
+                "year . yacht4day dental fer"
+                "year . yacht4day dental fer"
+                "year mismatched yacht4day dental fer"
+                "year . yacht4day dental fwd2"
+                "year . yacht4day dental fer2"
+                "year . yacht4day . fer2";
+        }
+        .timeline_vertical > div{
+            border-radius: 3px;
+            margin: 3px;
+
+        
+        }
+        .year{
+            grid-area: year;
+            background-color: unset;
+            position: absolute;
+            height: calc(20 * 50px);
+            width: 90vw;
+            max-width: 300px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            
+
+            
+            
+        }
+        .year > span{
+            flex-grow: 1;
+            border-bottom: 1px dashed grey;
+            display: flex;
+            height: 50px;
+            padding: 17px 0;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline_vertical">
+        <div class="year" style="margin: 0 5px;">
+            <span>2015</span>
+            <span>2015</span>
+            <span>2016</span>
+            <span>2016</span>
+            <span>2016</span>
+            <span>2016</span>
+            <span>2017</span>
+            <span>2017</span>
+            <span>2017</span>
+            <span>2017</span>
+            <span>2018</span>
+            <span>2018</span>
+            <span>2018</span>
+            <span>2018</span>
+            <span>2019</span>
+            <span>2019</span>
+            <span>2019</span>
+            <span>2019</span>
+            <span>2020</span>
+            <span>2020</span>
+        </div>
+        <div class="pomodoro"></div>
+        <div class="stylereply"></div>
+        <div class="paperkarma"></div>
+        <div class="dental"></div>
+        <div class="fwd"></div>
+        <div class="fer"></div>
+        <div class="fwd fwd2"></div>
+        <div class="fer fer2"></div>
+
+
+        <div class="yacht4day"></div>
+        <div class="mismatched"></div>
+
+    </div>
+    
+    
+</body>
+</html>
