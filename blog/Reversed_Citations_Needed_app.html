@@ -2,6 +2,18 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164645355-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164645355-1');
+    </script>
     <title>FarMoreDifferent (DalekoRazlicijtij) a list of personal projects</title>
     <meta charset="utf-8">
 
@@ -25,7 +37,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
 
 
 
@@ -39,7 +51,7 @@
     <link rel="stylesheet" href="blogstyle.css">
 
     <style>
-        
+
     </style>
 </head>
 
@@ -81,7 +93,8 @@
 
         $(document).ready(() => {
             let content = readTextFile(
-                "https://raw.githubusercontent.com/Mats01/portfolio/master/blog/Reversed_Citations_Needed_app.md");
+                "https://raw.githubusercontent.com/Mats01/portfolio/master/blog/Reversed_Citations_Needed_app.md"
+                );
             let converter = new showdown.Converter(),
                 html = converter.makeHtml(content);
             // alert(html);
