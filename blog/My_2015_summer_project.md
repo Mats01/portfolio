@@ -2,7 +2,7 @@
 … which turned into my high-school side project.
 
 
-![](https://paper-attachments.dropbox.com/s_0CAEE56025BF946F427DA9E50C75DDC8FE7EDE66F0354135C8390C794DE71A99_1569868719077_tomato+header.jpg)
+![](https://paper-attachments.dropbox.com/s_0CAEE56025BF946F427DA9E50C75DDC8FE7EDE66F0354135C8390C794DE71A99_1588068029841_pomidori2-1.jpg)
 
 
 *Note: to understand what I am writing about here it’’s helpful to first take a look at the app:*
@@ -83,7 +83,3 @@ I kept working on the app here and there for a long time after that, and you can
 [](https://pomodorowebapp.appspot.com/)[https://pomodoro.farmoredifferent.com/](https://pomodoro.farmoredifferent.com/)
 
 …when I eventually switched to using [Toggl](http://toggl.com).
-
-
-
-
