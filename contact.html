@@ -95,7 +95,7 @@
         </h3>
         <p> Let me know what you think below and I'll try to get back to you.
         </p>
-        <form method="POST" action="https://hooks.zapier.com/hooks/catch/7225475/o5ozwpf/"
+        <form method="POST" action=""
           class="bg-light p-5 contact-form" id="contact_from" target="dummyframe">
           <div class="form-group">
             <input type="text" name="Name" id="Name" class="form-control" placeholder="Your Name">
@@ -121,6 +121,20 @@
         </div>
         <script>
           $("#contact_from").submit((e) => {
+            e.preventDefault();
+            let name = $("#contact_from #Name").val();
+            let email = $("#contact_from #email").val();
+            let message = $("#contact_from #Message").val();
+            let location = `https://maker.ifttt.com/trigger/fmd_form/with/key/fTj5Xp9rhudl2rnOYbppfK-7LHTfdGGq85vh0fBiBbQ?value1=${name}&value2=${email}&value3=${message}`;
+            try {
+              var xhr = new XMLHttpRequest();
+              xhr.open("POST", location);
+              xhr.send();
+              console.log("Pushed to IFTTT successfully!");
+      
+            } catch (error) {
+                console.error(error);
+            }
             $("#contact_from").css('display', 'none');
             $("#thanks").css('display', 'block');
 
