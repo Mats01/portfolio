@@ -33,7 +33,7 @@ let snippets = {
   <ul class="nav navbar-nav">
     <li><a href="index.html">Home</a></li>
     <li><a href="contact.html">Contact</a></li>
-    <li><a href="blog.html">Stories</a></li>
+    <li><a href="stories.html">Stories</a></li>
   </ul>
 </nav>
 <footer>
@@ -49,7 +49,7 @@ let snippets = {
   <ul class="nav navbar-nav">
     <li><a href="../index.html">Home</a></li>
     <li><a href="../contact.html">Contact</a></li>
-    <li><a href="../blog.html">Stories</a></li>
+    <li><a href="../stories.html">Stories</a></li>
   </ul>
 </nav>
 <footer>
