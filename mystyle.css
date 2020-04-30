@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
+  
 }
 
 body {
@@ -35,6 +36,11 @@ a {
   font-family: 'Roboto Mono', monospace;
   color: cadetblue;
   overflow: hidden;
+}
+
+li{
+  font-size: 1rem;
+
 }
 
 a:visited {
