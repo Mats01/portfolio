@@ -53,11 +53,11 @@ So, having a great sense of what I was trying to accomplish I started planning o
     - auto_start_new
     - owner (related user object)
 
-Next I went on to define all the classes encapsulating these data structures and broadly defining the functions I had foreseen needing.
+I was then finally in a great place to start writing some code.  Conveniently, the google’s flavor on Django’s entitiescalss.py (really models.py) is just the perfect place to keep all these classes. (At the time I still hadn’t had internalized the idea of modules and I only put code in the files I found already existing in the project. This later lead to a very long, monolithic app).
+
+So I went on to define all the classes encapsulating these data structures and broadly defining the functions I had foreseen needing.
 
 *Side note: I was actually quite surprised looking back at my documents from the time with just how* *thorough* *of a plan I had created for the app before even properly starting.* *Again, most of the credit for this should go to Marko for pointing out things to pay attention to.* 
-
-I was then finally in a great place to start writing some code.  Conveniently, the google’s flavor on Django’s entitiescalss.py (really models.py) is just the perfect place to keep all these classes. (At the time I still hadn’t had internalized the idea of modules and I only put code in the files I found already existing in the project. This later lead to a very long, monolithic app).
 
 
 ## The learning process
@@ -75,11 +75,40 @@ And there it was, my master piece… version 1.0
 …you can tell this is a genuinely an old screenshot for I was still developing on Windows. 
 
 
+## Putting it all together
+
+So let’s take a quick look at what I had at the end of the summer.
+
+The app worked something like this: a user coming to the site would create an account to start using the app (though I played with having just the timer available even if you weren’t logged in). They would then get a screen with a big timer underneath which they could adjust some settings and create and manage their tasks. 
+
+
+![upload 3/10/2015 at 16:23:07.png](https://trello-attachments.s3.amazonaws.com/560fe4be1fc68887e5176014/1280x905/bba30d9162e2e973927930588a5e8f5d/upload_3_10_2015_at_16_23_07.png)
+
+
+The user could either start a timer without a task (automatically labeled “Other”, or start a pomodoro for a specific task they are working on. The app would then count down the time they’d chosen a prompt them to take a beak at the end, count down the time chosen for the break, and start the process again with the next pomodoro. 
+
+
+![Charts.png](https://trello-attachments.s3.amazonaws.com/55d5f1220e3ea8bcf0ca76fe/1366x768/839346f8856bb559c12fdad37c6786f3/Charts.png)
+
+
+The only other screen the app has is a progress screen where the user is presented with charts about their tracked time. I’ve also included a screenshot of how I’ve later redesigned this screen below
+
+
+![upload 4/10/2015 at 15:49:19.png](https://trello-attachments.s3.amazonaws.com/55d5f1220e3ea8bcf0ca76fe/1279x598/8d65d0bc4ff4278d8f914359515fd671/upload_4_10_2015_at_15_49_19.png)
+
+
+
 ## Final thoughts 
 
-Ok, so I had reached a functioning version, but the app wasn’t yet nearly complete. The next thing it needed was the ability to record work, for which I needed to introduce **tasks.** And further, the app needed a way to report the recorded work…
+The one big thing I’d say was missing from this first version was syncing the currently running timer with the back-end. The latest version of the app captures the currently running timer so it can survive accidental tab closes or similar disruptive events (even follow you around as you switch devices as you work). 
+
+Other than that the app did everything I needed it to and I used it thorough high school to help me focus when I was studying.  
 
 I kept working on the app here and there for a long time after that, and you can find a *final* version from 2019 here:
 [](https://pomodorowebapp.appspot.com/)[https://pomodoro.farmoredifferent.com/](https://pomodoro.farmoredifferent.com/)
 
 …when I eventually switched to using [Toggl](http://toggl.com).
+
+
+
+
