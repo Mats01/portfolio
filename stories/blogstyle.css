@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 900px) {
     .blog_content {
-        margin: auto;
+    margin: 3vh auto;
 
     }
 }

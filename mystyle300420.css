@@ -43,6 +43,18 @@ li{
 
 }
 
+.author_line {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8rem !important;
+  line-height: 1.2rem !important;
+}
+
+.author_line strong{
+  color: cadetblue;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+}
+
 a:visited {
   font-family: 'Roboto Mono', monospace;
   color: cadetblue;
@@ -337,7 +349,7 @@ footer {
   }
 
   .articles_wrapper {
-    margin: auto;
+    margin: 3vh auto;
 
   }
 

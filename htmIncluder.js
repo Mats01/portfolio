@@ -40,7 +40,8 @@ let snippets = {
   <h1 class="footer_title">Far</h1>
   <h1 class="footer_title">More</h1>
   <h1 class="footer_title">Different</h1>
-  <p>currently studying @ FER</p>
+  <p>Matej Butković<br>
+  currently studying @ FER</p>
 </footer>
 `,
     'article_nav': `
@@ -56,7 +57,8 @@ let snippets = {
   <h1 class="footer_title">Far</h1>
   <h1 class="footer_title">More</h1>
   <h1 class="footer_title">Different</h1>
-  <p>currently studying @ FER</p>
+  <p>Matej Butković<br>
+  currently studying @ FER</p>
 </footer>
 `,
     'sidebar': `
@@ -64,19 +66,23 @@ let snippets = {
 
 <div class="single_article">
     <h3><a href="stories/2015-summer-project.html">My 2015 summer project</a></h3>
+    <p class="author_line">
+    <strong>pubished</strong>: 23.04.2020.
+</p>
     <p>The Pomodoro webapp</p>
-    <div><span>2.9.2019.</span></div>
 </div>
 
 <div class="single_article">
     <h3><a href="stories/Reversed_Citations_Needed_app.html">Reversed Citations Needed
     app</a></h3>
+    <p class="author_line">
+    <strong>pubished</strong>: 23.04.2020.
+</p>
     <p>
     Making a simple PWA in a week: how to quickly get form idea to execution.
 
     </p>
 
-    <div><span>12.9.2019.</span></div>
 </div>
 
 `,
@@ -85,19 +91,23 @@ let snippets = {
 
 <div class="single_article">
     <h3><a href="2015-summer-project.html">My 2015 summer project</a></h3>
+    <p class="author_line">
+    <strong>pubished</strong>: 23.04.2020.
+</p>
     <p>The Pomodoro webapp</p>
-    <div><span>2.9.2019.</span></div>
 </div>
 
 <div class="single_article">
     <h3><a href="Reversed_Citations_Needed_app.html">Reversed Citations Needed
     app</a></h3>
+    <p class="author_line">
+    <strong>pubished</strong>: 23.04.2020.
+</p>
     <p>
     Making a simple PWA in a week: how to quickly get form idea to execution.
 
     </p>
 
-    <div><span>12.9.2019.</span></div>
 </div>
 `
 };
