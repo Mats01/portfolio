@@ -18,9 +18,9 @@
     <meta charset="utf-8">
 
     <!-- Start of SEO data-->
-    <meta name="title" content="Reversed Citations Needed app">
-    <meta name="description" content="Making a simple PWA in a week: how to quickly get form idea to execution. ">
-    <meta name="keywords" content="pwa,wiki,wikipedia,game,progressivewebapp,web developement">
+    <meta name="title" content="My 2015 Summer Project">
+    <meta name="description" content="A story about how I made my first webapp on Google App Engine. ">
+    <meta name="keywords" content="google,googleappengine,pyhon,coding,developer,blog">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
@@ -93,8 +93,7 @@
 
         $(document).ready(() => {
             let content = readTextFile(
-                "https://raw.githubusercontent.com/Mats01/portfolio/master/blog/Reversed_Citations_Needed_app.md"
-                );
+                "https://raw.githubusercontent.com/Mats01/portfolio/master/stories/My_2015_summer_project.md");
             let converter = new showdown.Converter(),
                 html = converter.makeHtml(content);
             // alert(html);
@@ -124,6 +123,7 @@
             </div>
             <div class="col-xl-4 sidebar ftco-animate bg-light pt-5">
                 <div class="sidebar-box pt-md-4" my_include_html="sidebar_blog">
+
                 </div>
             </div>
         </div>
