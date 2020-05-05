@@ -152,9 +152,7 @@ main {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-aside{
-  position: fixed;
-}
+
 
 
 footer {
@@ -274,7 +272,7 @@ footer {
 
 .contact_main{
   width: calc(100% - 320px);
-  margin: 50px 0 70px 320px;
+  margin: 50px 0 70px 0;
 }
 
 .contact_form_wrapper {
