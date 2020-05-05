@@ -30,7 +30,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="htmIncluder.js"></script>
 
-  <link rel="stylesheet" href="mystyle300420v2.css">
+  <link rel="stylesheet" href="blogstyle050520.css">
   <style>
 
   </style>
@@ -69,7 +69,7 @@
       <div class="asside_wrapper" my_include_html="nav" active_link="Contact">
       </div>
     </aside>
-    <div>
+    <div class="contact_main">
       <div class="container contact_container">
         <div class="contact_gird">
           <div class="contact_element">
@@ -95,13 +95,14 @@
         </div>
 
       </div>
+
+
       <div class="contact_form_wrapper">
         <h3>This website is a work in progress, I would really appreciate any feedback you have!
         </h3>
         <p> Let me know what you think below and I'll try to get back to you.
         </p>
-        <form method="POST" action=""
-          class="bg-light p-5 contact-form" id="contact_from" target="dummyframe">
+        <form method="POST" action="" class="bg-light p-5 contact-form" id="contact_from" target="dummyframe">
           <div class="form-group">
             <input type="text" name="Name" id="Name" class="form-control" placeholder="Your Name">
           </div>
@@ -130,15 +131,16 @@
             let name = $("#contact_from #Name").val();
             let email = $("#contact_from #email").val();
             let message = $("#contact_from #Message").val();
-            let location = `https://maker.ifttt.com/trigger/fmd_form/with/key/fTj5Xp9rhudl2rnOYbppfK-7LHTfdGGq85vh0fBiBbQ?value1=${name}&value2=${email}&value3=${message}`;
+            let location =
+              `https://maker.ifttt.com/trigger/fmd_form/with/key/fTj5Xp9rhudl2rnOYbppfK-7LHTfdGGq85vh0fBiBbQ?value1=${name}&value2=${email}&value3=${message}`;
             try {
               var xhr = new XMLHttpRequest();
               xhr.open("POST", location);
               xhr.send();
               console.log("Pushed to IFTTT successfully!");
-      
+
             } catch (error) {
-                console.error(error);
+              console.error(error);
             }
             $("#contact_from").css('display', 'none');
             $("#thanks").css('display', 'block');
@@ -146,9 +148,33 @@
           });
         </script>
       </div>
+      <div class="container contact_container">
+        <h1>About me</h1>
+        <div class="portrait">
+          <img class="portrait_img" src="portrait.jpg" alt="Matej Butkovic">
+          <h4>Matej Butkovic</h4>
+        </div>
+        <h2>Who am I?</h2>
+        <p>I am a 20-year-old student from Pula, Croatia currently studying at FER (at University of Zagreb). I’m an
+          amateur full-stack web developer and I like to build things on the web to solve problems and gain new skills.
+        </p>
+        <h2>What is this website for?</h2>
+        <p>I started this website as a place for my project to live on the web. It’s a place for me to share my thoughts
+          and ideas as well as showcase my work. Here I’m also writing stories about the projects I worked on or simply
+          about things that interest me. And finally, this is a place to connect with people who share my interests. So
+          if you find what you see here interesting, feel free to let me know through the contact form above. </p>
+        <h2>What kind of stories to expect?</h2>
+        <p>I don’t have a rule for what I’ll write about. I’ll certainly document my progress on new projects I work on,
+          but I may also sometimes come up with a story on a completely unrelated topic that interests me. If there is
+          something you would like to see me write about I would be more than happy to hear suggestions or tips, again
+          there’s a contact form above. </p>
+      </div>
     </div>
 
+
   </main>
+
+
 
 </body>
 
