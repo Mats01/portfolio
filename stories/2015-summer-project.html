@@ -11,6 +11,14 @@
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
+        ga('create', 'UA-164645355-1', 'auto');
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'ReadAll',
+            eventAction: 'started',
+            eventLabel: 'My 2016 summer project'
+        });
+
 
         gtag('config', 'UA-164645355-1');
     </script>
@@ -98,11 +106,38 @@
 
         $(document).ready(() => {
             let content = readTextFile(
-                "https://raw.githubusercontent.com/Mats01/portfolio/master/stories/My_2015_summer_project.md");
+                "https://raw.githubusercontent.com/Mats01/portfolio/master/stories/My_2015_summer_project.md"
+            );
             let converter = new showdown.Converter(),
                 html = converter.makeHtml(content);
             // alert(html);
             $(".blog_content").append(html);
+        });
+        let read = false;
+        $(window).scroll(function () {
+            // This is then function used to detect if the element is scrolled into view
+            function elementScrolled(elem) {
+                var docViewTop = $(window).scrollTop();
+                var docViewBottom = docViewTop + $(window).height();
+                var elemTop = $(elem).offset().top - 200;
+                return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+            }
+
+            // This is where we use the function to detect if ".box2" is scrolled into view, and when it is add the class ".animated" to the <p> child element
+            if (elementScrolled('#bottom') && !read) {
+
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'ReadAll',
+                    eventAction: 'read',
+                    eventLabel: 'My 2016 summer project'
+                });
+
+                read = true;
+
+                // Your function here
+
+            }
         });
     </script>
 
@@ -121,14 +156,15 @@
                 <div class="row pt-md-6">
                     <div class="col-md-12">
                         <div class="blog_content">
-                        <p class="author_line">
-                            <strong>author</strong>: Matej Butković<br>
-                            <strong>pubished</strong>: 23.04.2020.
-                            <strong>edited</strong>: 30.04.2020.
-                        </p>
+                            <p class="author_line">
+                                <strong>author</strong>: Matej Butković<br>
+                                <strong>pubished</strong>: 23.04.2020.
+                                <strong>edited</strong>: 30.04.2020.
+                            </p>
 
 
                         </div>
+                        <div id="bottom"></div>
                     </div>
                 </div>
             </div>
