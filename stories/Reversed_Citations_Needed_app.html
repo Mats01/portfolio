@@ -16,7 +16,7 @@
             hitType: 'event',
             eventCategory: 'ReadAll',
             eventAction: 'started',
-            eventLabel: 'My 2016 summer project'
+            eventLabel: 'Reversed Citations Needed app'
         });
         gtag('config', 'UA-164645355-1');
     </script>
@@ -105,7 +105,7 @@
         $(document).ready(() => {
             let content = readTextFile(
                 "https://raw.githubusercontent.com/Mats01/portfolio/master/stories/Reversed_Citations_Needed_app.md"
-                );
+            );
             let converter = new showdown.Converter(),
                 html = converter.makeHtml(content);
             // alert(html);
