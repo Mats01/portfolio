@@ -71,8 +71,8 @@
     <script src="../htmIncluder.js"></script>
 
 
-    <link rel="stylesheet" href="../mystyle050520v2.css">
-    <link rel="stylesheet" href="blogstyle300420.css">
+    <link rel="stylesheet" href="../mystyle080520.css">
+    <link rel="stylesheet" href="blogstyle080520.css">
 
     <style>
 
@@ -117,7 +117,7 @@
 
         $(document).ready(() => {
             let content = readTextFile(
-                "https://raw.githubusercontent.com/Mats01/portfolio/master/stories/Developer_Journal_Making_the_Dayty_App.md"
+                "https://raw.githubusercontent.com/Mats01/portfolio/master/stories/Developer_Journal_Making_the_Dayty_App.html.md"
             );
             let converter = new showdown.Converter(),
                 html = converter.makeHtml(content);
