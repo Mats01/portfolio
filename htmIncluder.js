@@ -85,6 +85,19 @@ let snippets = {
 
 </div>
 
+<div class="single_article">
+    <h3><a href="stories/Developer_Journal_Making_the_Dayty_App.html">Developer Journal: Making the Dayty App
+    app</a></h3>
+    <p class="author_line">
+    <strong>pubished</strong>: 08.05.2020.
+</p>
+    <p>
+    Making a simple PWA in a week: how to quickly get form idea to execution.
+
+    </p>
+
+</div>
+
 `,
 'sidebar_blog': `
 <p>A couple of stories explaining the apps are coming!</p>
@@ -102,6 +115,19 @@ let snippets = {
     app</a></h3>
     <p class="author_line">
     <strong>pubished</strong>: 23.04.2020.
+</p>
+    <p>
+    Making a simple PWA in a week: how to quickly get form idea to execution.
+
+    </p>
+
+</div>
+
+<div class="single_article">
+    <h3><a href="Developer_Journal_Making_the_Dayty_App.html">Developer Journal: Making the Dayty App
+    app</a></h3>
+    <p class="author_line">
+    <strong>pubished</strong>: 08.05.2020.
 </p>
     <p>
     Making a simple PWA in a week: how to quickly get form idea to execution.
