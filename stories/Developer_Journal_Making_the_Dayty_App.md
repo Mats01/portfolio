@@ -1,8 +1,7 @@
 # Developer Journal: Making the Dayty App
+
 The app will live here: [dayty.farmoredifferent.com](http://dayty.farmoredifferent.com) once it’s completed. For now this just redirects to my development server through [ngrok](https://ngrok.com/).  
 
-This story is the spring board off of which I'm jumping into making a brand new productivity app. I'll be writing the story in phases as follow up stories to this one (I'll have them linked below). The idea is to document the entire development process and the iterations I'll be going through while making the app.
-So let's get started.
 
 ## What is Dayty?
 
