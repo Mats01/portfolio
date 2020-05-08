@@ -33,7 +33,9 @@ The app also now supports dark mode, automatically adjusting to your system’s 
 The dev journal will be linked here soon…
 
 Link to the app again: [dayty.farmoredifferent.com](http://dayty.farmoredifferent.com)
-For now, please direct any feedback to the [contact form here](https://farmoredifferent.com/contact.html) or email me directly at farmoredifferent@gmail.com 
+
+For now, please direct any feedback to the [contact form here](https://farmoredifferent.com/contact.html) or email me directly at **farmoredifferent@gmail.com** 
+
 I am happy to hear your suggestions or ideas, but you can send me bug reports as well. 
 
 
