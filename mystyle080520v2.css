@@ -170,7 +170,7 @@ footer {
 
 .row.d-flex {
   position: relative;
-  max-width: calc(99vw - 320px);
+  width: calc(99vw - 320px);
 }
 
 
