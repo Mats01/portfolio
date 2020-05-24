@@ -24,12 +24,12 @@
         }
         gtag('js', new Date());
         ga('create', 'UA-164645355-1', 'auto');
-        // ga('send', {
-        //    hitType: 'event',
-        //    eventCategory: 'ReadAll',
-        //    eventAction: 'started',
-        //    eventLabel: 'Developer_Journal:_Making_the_Dayty_App'
-        // });
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Started',
+            eventAction: 'started',
+            eventLabel: 'Developer_Journal:_Making_the_Dayty_App'
+        });
         gtag('config', 'UA-164645355-1');
     </script>
     <title>FarMoreDifferent (DalekoRazlicijtij) a list of personal projects</title>
@@ -43,7 +43,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta name="author" content="Matej Butković">
-    
+
 
     <!-- End of SEO data -->
 
@@ -138,12 +138,12 @@
             // This is where we use the function to detect if ".box2" is scrolled into view, and when it is add the class ".animated" to the <p> child element
             if (elementScrolled('#bottom') && !read) {
 
-                // ga('send', {
-                //    hitType: 'event',
-                //    eventCategory: 'ReadAll',
-                //    eventAction: 'read',
-                //    eventLabel: 'Developer_Journal:_Making_the_Dayty_App'
-                // });
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'ReadAll',
+                    eventAction: 'read',
+                    eventLabel: 'Developer_Journal:_Making_the_Dayty_App'
+                });
 
                 read = true;
 

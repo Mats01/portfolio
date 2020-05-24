@@ -29,7 +29,11 @@ The app also now supports dark mode, automatically adjusting to your system’s 
 ![](https://paper-attachments.dropbox.com/s_C4DB63E4B079B17C788AFCAD08E9890A26DB2A287C241B89A19803C874E20169_1588961471326_image.png)
 
 
-The dev journal will be linked here soon…
+
+## Dev journal:
+
+[**Dayty: Phase 0 (Starting a Django project)**](/stories/Dayty_Phase_0_Starting_a_Django_project.html) 
+[**Dayty: Phase 1 (Defining models, choosing a CSS framework, populating the admin panel, and adding basic views)**](/stories/Dayty_Phase_1.html)
 
 Link to the app again: [dayty.farmoredifferent.com](http://dayty.farmoredifferent.com)
 
