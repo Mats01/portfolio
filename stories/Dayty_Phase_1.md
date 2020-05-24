@@ -36,6 +36,10 @@ Each DailyTheme object was a *realization* of an AbstractTheme. In this way, the
 
 In conclusion, each user has a set of active *AbstractThemes,* which are the themes shown in the Home screen when the user goes to record a new *DayEntry.* When the user then saves his entry for the day, for each of the *AbstractThemes* a *DailyTheme* instance is then created and associated with the specific *DayEntry* for that day. 
 
+![](https://paper-attachments.dropbox.com/s_DA0CD57B9D0A84D8E954FEA5DE015FC12E7ACAACB0481B863CFC1D6FA79284AA_1589068571400_image.png)
+
+
+
 
 ## [Skeleton.css](http://getskeleton.com/)
 
