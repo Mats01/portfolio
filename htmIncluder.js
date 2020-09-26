@@ -135,5 +135,81 @@ let snippets = {
     </p>
 
 </div>
+`,
+'stories':`
+<div class="articles_wrapper">
+<h1>Stories</h1><br>
+<div class="single_article">
+
+
+  <div class="single_article">
+    <h3><a href="stories/2015-summer-project.html">My 2015 summer project</a></h3>
+    <p class="author_line">
+      <strong>author</strong>: Matej Butković<br>
+      <strong>pubished</strong>: 23.04.2020.
+      <strong>edited</strong>: 30.04.2020.
+    </p>
+
+
+
+
+
+  </div>
+
+  <div class="single_article">
+    <h3><a href="stories/Reversed_Citations_Needed_app.html">Reversed Citations Needed
+        app</a></h3>
+    <p class="author_line">
+      <strong>author</strong>: Matej Butković<br>
+      <strong>pubished</strong>: 23.04.2020.
+    </p>
+
+
+
+  </div>
+
+  <div class="single_article">
+    <h3><a href="stories/Developer_Journal_Making_the_Dayty_App.html">Developer Journal Making the Dayty
+        App
+        app</a></h3>
+    <p class="author_line">
+      <strong>author</strong>: Matej Butković<br>
+      <strong>pubished</strong>: 08.05.2020.
+    </p>
+
+
+
+  </div>
+
+  <div class="single_article">
+    <h3><a href="stories/Dayty_Phase_0_Starting_a_Django_project.html">Developer Journal: Phase 0 (Starting a Django project)
+        App
+        app</a></h3>
+    <p class="author_line">
+      <strong>author</strong>: Matej Butković<br>
+      <strong>pubished</strong>: 24.05.2020.
+    </p>
+
+
+
+  </div>
+
+  <div class="single_article">
+    <h3><a href="stories/Dayty_Phase_1.html">Developer Journal: Phase 1 (Defining models, choosing a CSS framework, populating the admin panel, and adding basic views)
+        App
+        app</a></h3>
+    <p class="author_line">
+      <strong>author</strong>: Matej Butković<br>
+      <strong>pubished</strong>: 24.05.2020.
+    </p>
+
+
+
+  </div>
+
+</div>
+</div>
 `
+
+
 };

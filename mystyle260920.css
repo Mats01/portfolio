@@ -310,14 +310,15 @@ footer {
 }
 
 .articles_wrapper {
-  margin: 8vh 5px;
-  width: 100%;
+  margin: 8vh auto;
+  width: 80%;
 
 }
 
 .single_article {
   max-width: 600px;
   margin-bottom: 40px;
+
 }
 
 .single_article span {
@@ -378,6 +379,7 @@ footer {
 
   .articles_wrapper {
     margin: 3vh auto;
+    width: 100%;
 
   }
 
