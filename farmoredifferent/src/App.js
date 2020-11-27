@@ -9,7 +9,7 @@ import {
 import './App.css';
 import Story from './story/Story';
 
-import testmd from './Test.md';
+import testmd from './stories/Test.md';
 
 
 const articles = [

@@ -15,8 +15,6 @@ class Story extends React.Component {
     })
   }
 
-
-
   render() {
     const { markdown } = this.state;
 
