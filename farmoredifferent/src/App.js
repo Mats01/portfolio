@@ -9,11 +9,14 @@ import {
 import './App.css';
 import Story from './story/Story';
 
+import testmd from './Test.md';
+
+
 const articles = [
   {
     name: "Pomodoro",
     year: "2015",
-    story: "/stories/2015-summer-project.html",
+    story: testmd,
     link: "https://pomodorowebapp.appspot.com/",
     tech: "Google App Engine (Python)"
 
@@ -72,7 +75,7 @@ function App() {
         <Switch>
           
           <Route path="/story">
-            <Story />
+            <Story content={testmd}/>
           </Route>
           <Route path="/">
             <Home />
