@@ -1,3 +1,20 @@
+:root {
+  --background-clolor: white;
+  --text-color: black;
+  --react-gray:  #282c34;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  
+  :root {
+    --background-clolor: rgb(45, 47, 51);
+    --text-color: white;
+    --react-gray:  #282c34;
+  }
+
+}
+
 .App {
   text-align: center;
 }
@@ -14,14 +31,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--react-gray);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text-color);
 }
 
 .App-link {
@@ -38,6 +55,8 @@
 }
 
 
+
+
 * {
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
@@ -45,12 +64,16 @@
 }
 
 body {
-  background-color: white;
+  background-color: var(--background-clolor);
+  color: var(--text-color);
   font-family: Helvetica, sans-serif;
   max-width: 99vw;
   overflow-x: hidden;
 
+
 }
+
+
 
 h1 {
   font-family: 'Roboto Mono', monospace;
@@ -106,7 +129,7 @@ a:visited {
 
 h3.myheading>a {
   font-size: 1.2rem;
-  color: black;
+  color: var(--text-color);
   line-height: 1rem;
 
 }
@@ -305,7 +328,7 @@ footer {
 /* The actual content */
 .timeline_content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: var(--background-clolor);
   position: relative;
   border-radius: 6px;
 }
@@ -525,3 +548,4 @@ footer {
 
 
 }
+
