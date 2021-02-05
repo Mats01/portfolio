@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ReactMarkdown from "react-markdown";
 
@@ -10,7 +9,7 @@ class Story extends React.Component {
   }
 
   componentWillMount() {
-    fetch(this.props.content).then((response) => response.text()).then((text) => {
+    fetch(this.props.content.story).then((response) => response.text()).then((text) => {
       this.setState({ terms: text })
     })
   }
@@ -20,10 +19,11 @@ class Story extends React.Component {
 
     return (
       <div className="App">
-        <div className="massive_title">farmoredifferent.com</div>
-        <br></br>
-        <br></br>
-        <h2>Stories:</h2>
+        <h1>{this.props.content.name}</h1>
+        <p><span class="tech_label">published: </span>{this.props.content.published}</p>
+        <p><span class="tech_label">last updated: </span>{this.props.content.lastUpdated}</p>
+        
+
         
         <ReactMarkdown source={this.state.terms} />
         
