@@ -19,24 +19,42 @@ function App() {
 
   const routesList = stories.map(story => {
     return (
-      
-        <Route path={story.path}>
-          <Story content={story}/>
-        </Route>
+
+      <Route path={story.path}>
+        <Story content={story} />
+      </Route>
 
     )
   });
 
   return (
     <Router>
-        <Switch>
-          
-          {routesList}
+      <Switch>
 
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        {routesList}
+
+        <Route exact path="/">
+          <Home />
+        </Route>
+
+        <Route path="*">
+          <>
+            <div className="page_404">
+              <br />
+              <br />
+              <h1>404</h1>
+              <br />
+              <br />
+              <div>
+                <Link to="/">Back home</Link>
+              </div>
+              <div>
+                <Link to="/contact">Contact</Link>
+              </div>
+            </div>
+          </>
+        </Route>
+      </Switch>
     </Router>
 
   );

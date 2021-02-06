@@ -12,17 +12,19 @@ class ArticleList extends React.Component {
     const { articles } = this.props;
     const articleList = articles.map(article => {
       return (
-        <Link to={article.path} style={{ textDecoration: 'none', color: 'inherit' }}>
-          <div className="single_article">
+        <>
+          <div class="timeline_content">
             <h2>{article.year}</h2>
-            <h3>
+            <h3><Link to={article.path}>
               {article.name}
-            </h3>
-            <p><span className="tech_label">published: </span>{article.published}   <span className="tech_label">last updated: </span>{article.lastUpdated}</p>
-            <p className="article_summray">{article.summary}</p>
+            </Link></h3>
+            <a href={article.link} target="_blank">{article.link}</a>
+            <p><span class="tech_label">tech:</span> {article.tech}</p>
+            <p><span class="tech_label">published: </span>{article.published}</p>
+            <p><span class="tech_label">last updated: </span>{article.lastUpdated}</p>
           </div>
 
-        </Link>
+        </>
       )
     });
     return (
