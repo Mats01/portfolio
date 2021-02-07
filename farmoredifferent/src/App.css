@@ -121,7 +121,7 @@ h2.left {
     /* margin-left: 21vw; */
     /* width: 55vw; */
     flex-shrink: 5;
-    padding-left: 18px;
+    padding: 6px 18px;
 }
 
 .author_line {
@@ -179,6 +179,7 @@ main {
 .content_wrapper {
     display: flex;
     margin-left: 21vw;
+    margin-top: 4vh;
 }
 
 .selected_link {

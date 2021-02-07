@@ -45,7 +45,7 @@ function Story(props) {
       <div class="content_wrapper">
         <div className="blog_content">
           <h1>{props.content.name}</h1>
-          {props.weekly == true ?
+          {props.weekly === true ?
             <></>
             :
             <>

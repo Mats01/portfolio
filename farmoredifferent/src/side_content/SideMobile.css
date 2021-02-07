@@ -1,5 +1,9 @@
 @media screen and (max-width: 900px) {
     .side_wrapper {}
-    .side_content {}
-    .side_card {}
+    .side_content {
+        margin: 10px;
+    }
+    .side_card {
+        max-width: 90%;
+    }
 }
