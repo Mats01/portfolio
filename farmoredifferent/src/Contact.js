@@ -1,13 +1,8 @@
 import React from 'react';
-
-import ArticleList from './stories/ArticleList';
-
 import portrait from './portrait_2020.jpg'
+import Menu from './menu/Menu';
+import SideContent from './side_content/SideContent';
 
-
-import { stories } from './storiesMetadata';
-import Menu from './Menu';
-import SideContent from './SideContent';
 
 function Contact() {
     return (

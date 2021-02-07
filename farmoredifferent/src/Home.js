@@ -5,8 +5,9 @@ import ArticleList from './stories/ArticleList';
 
 
 import { stories, books } from './storiesMetadata';
-import Menu from './Menu';
-import SideContent from './SideContent';
+import Menu from './menu/Menu';
+import SideContent from './side_content/SideContent';
+
 
 function Home(props) {
   return (
@@ -20,7 +21,7 @@ function Home(props) {
 
 
 
-          {props.bookList == true ?
+          {props.bookList === true ?
             <>
 
               <h2 className="left">Books:</h2>

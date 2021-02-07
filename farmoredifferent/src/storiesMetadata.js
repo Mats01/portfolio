@@ -82,25 +82,6 @@ export const weeklyStory = {
 
 }
 
-export const whatImReading = [
-  {
-    name: "The Pragmatic Programmer",
-    author: "the guys",
-    path: "",
-  },
-  {
-    name: "Sapiens",
-    author: "Harrari",
-    path: "",
-  },
-  {
-    name: "Show your work",
-    author: "someody",
-    path: "",
-  },
-
-]
-
 export const books = [
 
   {

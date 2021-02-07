@@ -1,613 +1,397 @@
 :root {
-  --background-clolor: white;
-  --text-color: black;
-  --react-gray:  #282c34;
-  --light-text-color: #282c34;
-  --code-background-color: #f7f9fa;
-
+    --background-clolor: white;
+    --text-color: black;
+    --react-gray: #282c34;
+    --light-text-color: #282c34;
+    --code-background-color: #f7f9fa;
 }
 
 @media (prefers-color-scheme: dark) {
-  
-  :root {
-    --background-clolor: rgb(45, 47, 51);
-    --text-color: white;
-    --react-gray:  #282c34;
-    --light-text-color: white;
-    --code-background-color: rgb(82, 84, 87);
-  }
-
+     :root {
+        --background-clolor: rgb(45, 47, 51);
+        --text-color: white;
+        --react-gray: #282c34;
+        --light-text-color: white;
+        --code-background-color: rgb(82, 84, 87);
+    }
 }
 
 .App {
-  text-align: left;
-
-  box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
-
+    text-align: left;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: var(--react-gray);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: var(--text-color);
+    background-color: var(--react-gray);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: var(--text-color);
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-
 * {
-  box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
-
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
 }
 
 body {
-  background-color: var(--background-clolor);
-  color: var(--text-color);
-  font-family: Helvetica, sans-serif;
-  max-width: 99vw;
-  overflow-x: hidden;
-  
-
-
+    background-color: var(--background-clolor);
+    color: var(--text-color);
+    font-family: Helvetica, sans-serif;
+    max-width: 99vw;
+    overflow-x: hidden;
 }
 
-
-
 h1 {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.8rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8rem;
 }
 
 h2 {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.4rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.4rem;
 }
 
 h3 {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem;
 }
 
 h4 {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem;
 }
 
 a {
-  font-family: 'Roboto Mono', monospace;
-  color: cadetblue;
-  overflow: hidden;
+    font-family: 'Roboto Mono', monospace;
+    color: cadetblue;
+    overflow: hidden;
 }
 
 li {
-  font-size: 1rem;
-
+    font-size: 1rem;
 }
 
-h2.left{
-  text-align: left;
+h2.left {
+    text-align: left;
 }
 
-.page_404{
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
+.page_404 {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .massive_title {
-  font-size: min(52pt, max(5vw, 1.9rem)); font-family: 'Roboto Mono', monospace; text-align: left; margin-top: 3vh;
+    font-size: min(52pt, max(5vw, 1.9rem));
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    margin-top: 3vh;
 }
 
-.main_content{
-  margin-left: 21vw;
-  width: 55vw;
-  padding-left: 18px;
-}
-
-.side_content{
-  width: 20vw;
-  top: 11vh;
-  margin-top: 12vh;
-  position: sticky;
-  right: 0;
-  height: 99vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-left: 10px;
-
-}
-
-.side_card{
-  padding: 10px !important;
-  font-size: 0.8rem;
-  margin-bottom: 20px !important;
-  width: 20vw;
+.main_content {
+    /* margin-left: 21vw; */
+    /* width: 55vw; */
+    flex-shrink: 5;
+    padding-left: 18px;
 }
 
 .author_line {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 0.8rem !important;
-  line-height: 1.2rem !important;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.8rem !important;
+    line-height: 1.2rem !important;
 }
 
 .author_line strong {
-  color: cadetblue;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 500;
+    color: cadetblue;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
 }
 
 a:visited {
-  font-family: 'Roboto Mono', monospace;
-  color: cadetblue;
+    font-family: 'Roboto Mono', monospace;
+    color: cadetblue;
 }
 
 h3.myheading>a {
-  font-size: 1.2rem;
-  color: var(--text-color);
-  line-height: 1rem;
-
+    font-size: 1.2rem;
+    color: var(--text-color);
+    line-height: 1rem;
 }
 
 .navbar a {
-  font-family: 'Roboto Mono', monospace;
-  color: cadetblue;
-  font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+    color: cadetblue;
+    font-weight: 500;
 }
 
 .navbar .active_li {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .navbar a:visited {
-  color: cadetblue;
+    color: cadetblue;
 }
 
 .sidebar {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
-
-
 .tech_label {
-  font-weight: bold;
-  color: cadetblue;
+    font-weight: bold;
+    color: cadetblue;
 }
 
 main {
-  display: flex;
-  max-width: 99vw;
-  box-sizing: border-box;
+    display: flex;
+    max-width: 99vw;
+    box-sizing: border-box;
 }
 
-.content_wrapper{
-  display: flex;
-  
+.content_wrapper {
+    display: flex;
+    margin-left: 21vw;
 }
 
-.main_aside {
-  width: 320px;
-
-  box-sizing: border-box;
-  z-index: 3;
-
+.selected_link {
+    color: pink !important;
 }
-
-.asside_wrapper {
-  width: 320px;
-  padding: 70px 30px 30px 30px;
-
-  height: 100vh;
-  position: fixed;
-  box-sizing: border-box;
-  background-color: var(--background-clolor);
-
-
-}
-
-#nav_hamburger {
-  width: 30px;
-  height: 30px;
-  position: fixed;
-  left: 20px;
-  top: 20px;
-  z-index: 4;
-  display: none;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: var(--text-color);
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-.selected_link{
-  color: pink !important;
-}
-
-
-
 
 footer {
-  bottom: 10px;
-  position: absolute;
+    bottom: 10px;
+    position: absolute;
 }
 
 .footer_title {
-  font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .navbar li {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .row.d-flex {
-  position: relative;
-  width: calc(99vw - 320px);
+    position: relative;
+    width: calc(99vw - 320px);
 }
 
 
 /* The actual timeline (the vertical ruler) */
+
 .timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+
 /* The actual timeline (the vertical ruler) */
+
 .timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #888888;
-  top: 0;
-  bottom: 0;
-  left: 10%;
-  margin-left: -3px;
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #888888;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    margin-left: -3px;
 }
+
 
 /* Container around content */
+
 .timeline_container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 80%;
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 80%;
 }
+
 
 /* The circles on the timeline */
+
 .timeline_container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #555555;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #555555;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
 }
+
 
 /* Place the timeline_container to the left */
+
 .left {
-  left: 0;
+    left: 0;
 }
+
 
 /* Place the timeline_container to the right */
+
 .right {
-  left: 10%;
+    left: 10%;
 }
+
 
 /* Add arrows to the left timeline_container (pointing right) */
+
 .left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
 }
+
 
 /* Add arrows to the right timeline_container (pointing left) */
+
 .right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
 }
+
 
 /* Fix the circle for timeline_containers on the right side */
+
 .right::after {
-  left: -13px;
+    left: -13px;
 }
 
+
 /* The actual content */
+
 .timeline_content {
-  padding: 20px 30px;
-  background-color: var(--background-clolor);
-  position: relative;
-  border-radius: 6px;
-  text-align: left;
+    padding: 20px 30px;
+    background-color: var(--background-clolor);
+    position: relative;
+    border-radius: 6px;
+    text-align: left;
 }
 
 .hero {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .contact_main {
-  width: calc(100% - 320px);
-  margin: 50px 0 70px 0;
+    width: calc(100% - 320px);
+    margin: 50px 0 70px 0;
 }
 
 .contact_form_wrapper {
-  max-width: 800px;
-  width: 80vw;
-
+    max-width: 800px;
+    width: 80vw;
 }
 
 .contact_container {
-  max-width: unset;
+    max-width: unset;
 }
 
 .contact_gird {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .contact_element {}
 
 .contact_form_wrapper {
-  display: block;
-  clear: both;
+    display: block;
+    clear: both;
 }
 
 #thanks {
-  margin: 50px 0px;
-  background-color: lightblue;
-  padding: 30px;
-  color: white;
+    margin: 50px 0px;
+    background-color: lightblue;
+    padding: 30px;
+    color: white;
 }
 
 .btn-primary {
-  background-color: cadetblue;
-  border-color: cadetblue;
+    background-color: cadetblue;
+    border-color: cadetblue;
 }
 
 .articles_wrapper {
-  margin: 8vh auto;
-  width: 80%;
-
+    margin: 8vh auto;
+    width: 80%;
 }
 
 .single_article {
-  max-width: 600px;
-  margin-bottom: 40px;
-  border: 1px solid lightgray;
-  padding: 0 0 0 20px;
-  border-radius: 4px;
-
+    max-width: 600px;
+    margin-bottom: 40px;
+    border: 1px solid lightgray;
+    padding: 0 0 0 20px;
+    border-radius: 4px;
 }
 
 .article_summray {
-  line-height: 2rem;
-
+    line-height: 2rem;
 }
 
 .single_article span {
-  color: cadetblue;
-  font-family: 'Roboto Mono', monospace;
-
+    color: cadetblue;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .portrait {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 180px;
-  margin-bottom: 20px;
-  margin-left: -15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 180px;
+    margin-bottom: 20px;
+    margin-left: -15px;
 }
 
 .portrait_img {
-  height: 180px;
-  width: 180px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 900px) {
-  .main_aside {
-    width: 220px;
-  }
-
-  .row.d-flex {
-    padding-left: 5px;
-    margin-left: 30px;
-    width: 99vw;
-    max-width: unset;
-  }
-
-  .contact_gird {
-    display: grid;
-    margin-top: 10vh;
-    grid-template-columns: 50% 50%;
-  }
-
-  .contact_main {
-    width: unset;
-    margin: unset;
-  }
-
-
-  .main_aside {
-    width: 220px;
-    display: none;
-  }
-
-  #nav_hamburger {
-    display: unset;
-  }
-
-  .articles_wrapper {
-    margin: 3vh auto;
-    width: 100%;
-
-  }
-
-  .single_article {
-    max-width: unset;
-
-  }
-}
-
-@media screen and (max-width: 680px) {
-
-  body {
-    max-width: 99vw;
-    font-size: 10px;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  pre {
-    font-size: 1rem;
-  }
-
-
-  .main_aside {
-    height: 100%;
-    position: fixed;
-    display: none;
-    background-color: white;
-    z-index: 2;
-  }
-
-  .asside_wrapper {
-    height: 100vh;
-    position: fixed;
-
-  }
-
-  .row.d-flex {
-    max-width: calc(99vw);
-    margin: auto;
-  }
-
-  /* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
-
-  /* Full-width timeline_containers */
-  .timeline_container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-  /* Make sure that all arrows are pointing leftwards */
-  .timeline_container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
-    left: 18px;
-  }
-
-
-
-  /* Make all right timeline_containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
-
-  .contact_form_wrapper {
-    width: 99vw;
-    padding: 10px;
-  }
-
-  .contact_gird {
-    display: grid;
-    grid-template-columns: 100%;
-  }
-
-  footer {
-    bottom: 8vh;
-
-  }
-
-  .articles_wrapper {}
-
-  .single_article {
-    width: 100%;
-    margin: auto;
-  }
-
-
-}
-

@@ -1,0 +1,23 @@
+.side_wrapper {
+    flex-grow: 1;
+}
+
+.side_content {
+    top: 11vh;
+    margin-top: 12vh;
+    position: sticky;
+    right: 0;
+    height: 99vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.side_card {
+    padding: 10px !important;
+    font-size: 0.8rem;
+    margin-bottom: 20px !important;
+    width: 100%;
+    max-width: 300px;
+}

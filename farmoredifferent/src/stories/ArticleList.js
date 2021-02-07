@@ -1,9 +1,6 @@
 import React from 'react';
 
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   Link
 } from "react-router-dom";
 
@@ -18,7 +15,7 @@ class ArticleList extends React.Component {
             <h3>
               {article.name}
             </h3>
-            {this.props.book == true ?
+            {this.props.book === true ?
               <>
                 <p><span className="tech_label">finished: </span>{article.published} </p>
                 <p className="article_summray">{article.author}</p>

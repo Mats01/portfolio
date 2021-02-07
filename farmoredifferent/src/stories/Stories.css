@@ -1,6 +1,7 @@
 .blog_content {
-    margin: 8vh 9vw 2vh 21vw;
-    width: 50vw;
+    margin: 8vh 2vw 2vh 2vw;
+    /* width: 50vw; */
+    flex-grow: 2;
     max-width: 720px;
     font-size: 1.1em;
 

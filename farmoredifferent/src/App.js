@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -8,14 +7,15 @@ import {
   Redirect
 } from "react-router-dom";
 import './App.css';
+import './AppMobile.css';
 import Story from './stories/Story';
 
-import { useHistory } from "react-router-dom";
+
 
 
 import Home from './Home';
 
-import {books, stories, weeklyStory } from './storiesMetadata';
+import { books, stories, weeklyStory } from './storiesMetadata';
 import Contact from './Contact';
 
 
@@ -49,7 +49,7 @@ function App() {
         {routesList}
 
         <Route exact path="/weekly">
-          <Story content={weeklyStory} weekly={true}/>
+          <Story content={weeklyStory} weekly={true} />
         </Route>
 
         <Route exact path="/contact">
@@ -68,7 +68,7 @@ function App() {
           <Redirect to="/home" />
         </Route>
 
-        
+
 
         <Route path="*">
           <>
