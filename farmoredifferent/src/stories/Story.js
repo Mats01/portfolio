@@ -6,54 +6,69 @@ import './Stories.css';
 import {
   NavLink
 } from "react-router-dom";
+import Menu from '../Menu';
+import SideContent from '../SideContent';
 
 
-class Story extends React.Component {
-  state = {
-    markdown: ''
+function Story (props) {
+
+  const [markdown, setMarkdown] = React.useState();
+
+  React.useEffect(() => {
+    fetch(props.content.story).then((response) => response.text()).then((text) => {
+          setMarkdown(text)
+          window.scrollTo(0, 0)
+        })
+  }, [props.content])
+
+
+
+  // componentDidMount() {
+  //   fetch(props.content.story).then((response) => response.text()).then((text) => {
+  //     this.setState({ terms: text })
+  //   })
+  // }
+
+  function flatten(text, child) {
+    return typeof child === 'string'
+      ? text + child
+      : React.Children.toArray(child.props.children).reduce(flatten, text)
+  }
+  
+  function HeadingRenderer(props) {
+    var children = React.Children.toArray(props.children)
+    var text = children.reduce(flatten, '')
+    var slug = text.toLowerCase().replace(/\W/g, '-')
+    return React.createElement('h' + props.level, {id: slug}, props.children)
   }
 
-  componentWillMount() {
-    fetch(this.props.content.story).then((response) => response.text()).then((text) => {
-      this.setState({ terms: text })
-    })
-  }
-
-  render() {
-    const { markdown } = this.state;
 
     return (
       <div className="App">
-        <div className="main_aside">
-          <div className="asside_wrapper" >
 
-            <h4>NAVIGATION</h4>
-            <nav role="navigation" className="navbar">
-              <ul className="nav navbar-nav">
-                <li>
-                  <NavLink to="/home">Home</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/pomodoro" activeClassName="selected_link">Pomodoro</NavLink>
-                </li>
-              </ul>
-            </nav>
+        <Menu />
+        <div class="content_wrapper">
+          <div className="blog_content">
+            <h1>{props.content.name}</h1>
+            {props.weekly == true ?
+              <></>
+              : 
+              <>
+                <span>published: </span>{props.content.published}<br></br>
+                <span>last updated: </span>{props.content.lastUpdated}
+              </>
+            }
 
+
+            <ReactMarkdown source={markdown} renderers={{heading: HeadingRenderer}} />
           </div>
+          <SideContent />
+
         </div>
-        <div className="blog_content">
-          <h1>{this.props.content.name}</h1>
-          <p><span class="tech_label">published: </span>{this.props.content.published}</p>
-          <p><span class="tech_label">last updated: </span>{this.props.content.lastUpdated}</p>
-
-
-
-            <ReactMarkdown source={this.state.terms} />
-          </div>
 
       </div>
     )
-  }
+  
 
 }
 

@@ -128,7 +128,30 @@ h2.left{
 }
 
 .main_content{
-  margin-left: 30vw;
+  margin-left: 21vw;
+  width: 55vw;
+  padding-left: 18px;
+}
+
+.side_content{
+  width: 20vw;
+  top: 11vh;
+  margin-top: 12vh;
+  position: sticky;
+  right: 0;
+  height: 99vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10px;
+
+}
+
+.side_card{
+  padding: 10px !important;
+  font-size: 0.8rem;
+  margin-bottom: 20px !important;
+  width: 20vw;
 }
 
 .author_line {
@@ -184,6 +207,11 @@ main {
   display: flex;
   max-width: 99vw;
   box-sizing: border-box;
+}
+
+.content_wrapper{
+  display: flex;
+  
 }
 
 .main_aside {

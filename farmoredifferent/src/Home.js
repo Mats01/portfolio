@@ -2,28 +2,38 @@ import React from 'react';
 
 import ArticleList from './stories/ArticleList';
 
-import {
-  NavLink
-} from "react-router-dom";
 
-import stories from './storiesMetadata';
+
+import { stories, books } from './storiesMetadata';
 import Menu from './Menu';
+import SideContent from './SideContent';
 
-function Home() {
+function Home(props) {
   return (
     <div className="App">
 
       <Menu />
-      
-      <div className="main_content">
+      <div class="content_wrapper">
+        <div className="main_content">
 
-        <div className="massive_title">farmoredifferent.com</div>
+          <div className="massive_title">farmoredifferent.com</div>
 
 
-        <br></br>
-        <br></br>
-        <h2 className="left">Stories:</h2>
-        <ArticleList articles={stories} />
+
+          {props.bookList == true ?
+            <>
+
+              <h2 className="left">Books:</h2>
+              <ArticleList articles={books} />
+            </>
+            :
+            <>
+              <h2 className="left">Stories:</h2>
+              <ArticleList articles={stories} />
+            </>
+          }
+        </div>
+        <SideContent />
       </div>
     </div>
 

@@ -16,10 +16,7 @@ function Menu() {
         <nav role="navigation" className="navbar">
           <ul className="nav navbar-nav">
             <li>
-              <NavLink activeClassName="selected_link" to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink activeClassName="selected_link" to="/stories">Stories</NavLink>
+              <NavLink activeClassName="selected_link" to="/home">Home</NavLink>
             </li>
             <li>
               <NavLink activeClassName="selected_link" to="/contact">Contact</NavLink>

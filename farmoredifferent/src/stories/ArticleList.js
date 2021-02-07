@@ -18,8 +18,17 @@ class ArticleList extends React.Component {
             <h3>
               {article.name}
             </h3>
-            <p><span className="tech_label">published: </span>{article.published}   <span className="tech_label">last updated: </span>{article.lastUpdated}</p>
-            <p className="article_summray">{article.summary}</p>
+            {this.props.book == true ?
+              <>
+                <p><span className="tech_label">finished: </span>{article.published} </p>
+                <p className="article_summray">{article.author}</p>
+              </>
+              :
+              <>
+                <p><span className="tech_label">published: </span>{article.published}   <span className="tech_label">last updated: </span>{article.lastUpdated}</p>
+                <p className="article_summray">{article.summary}</p>
+              </>
+            }
           </div>
 
         </Link>

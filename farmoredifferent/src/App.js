@@ -4,20 +4,24 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Redirect
 } from "react-router-dom";
 import './App.css';
 import Story from './stories/Story';
 
+import { useHistory } from "react-router-dom";
+
 
 import Home from './Home';
 
-import stories from './storiesMetadata';
+import {books, stories, weeklyStory } from './storiesMetadata';
+import Contact from './Contact';
 
 
 function App() {
 
-  const routesList = stories.map(story => {
+  let routesList = stories.map(story => {
     return (
 
       <Route path={story.path}>
@@ -27,15 +31,44 @@ function App() {
     )
   });
 
+  routesList = routesList.concat(books.map(story => {
+    return (
+
+      <Route path={story.path}>
+        <Story content={story} />
+      </Route>
+
+    )
+  }))
+
+
   return (
     <Router>
       <Switch>
 
         {routesList}
 
-        <Route exact path="/">
+        <Route exact path="/weekly">
+          <Story content={weeklyStory} weekly={true}/>
+        </Route>
+
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
+
+        <Route exact path="/home">
           <Home />
         </Route>
+
+        <Route exact path="/books">
+          <Home bookList={true} />
+        </Route>
+
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
+
+        
 
         <Route path="*">
           <>
