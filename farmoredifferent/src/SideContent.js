@@ -11,7 +11,7 @@ import { stories, whatImReading } from './storiesMetadata';
 
 function SideContent() {
 
-    const articleList = stories.slice(stories.length - 2, stories.length).map(article => {
+    const articleList = stories.slice(0, 2).map(article => {
         return (
             <NavLink to={article.path} style={{ textDecoration: 'none', color: 'inherit' }} >
                 <div className="single_article side_card">
