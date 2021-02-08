@@ -1,4 +1,3 @@
-# Dayty: Phase 0 (Starting a Django project)
 Before I can begin making an app I have to set up the project and all that come with it. 
 
 I’ve chosen to make this app with Django because I’m already very familiar with it, and I know it is really flexible and gives me everything I need for this project and more. Plus I won’t have to worry much about security.
@@ -39,9 +38,9 @@ For this I only needed to install one additional library.
 And change my database settings in `settings.py` as shown [here](https://docs.djangoproject.com/en/3.0/ref/settings/#databases).
 
 I was now ready to start making my app.
-[+Dayty: Phase 1](/stories/Dayty_Phase_1.html) 
+[+Dayty: Phase 1](/Dayty-Phase-1) 
 
 
 **Back to starting post:**
-[+Developer Journal: Making the Dayty App](/stories/Developer_Journal_Making_the_Dayty_App.html) 
+[+Developer Journal: Making the Dayty App](/Developer-Journal-Making-the-Dayty-App) 
 

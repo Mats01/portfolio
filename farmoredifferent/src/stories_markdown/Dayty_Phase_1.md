@@ -1,5 +1,3 @@
-# Dayty: Phase 1 (Defining models, choosing a CSS framework, populating the admin panel, and adding basic views)
-
 ## Designing the models
 
 As always when I start a new app, the first thing I got to work on was designing the database.
@@ -121,5 +119,5 @@ The simple solution I’ve found for this is simply to rename my CSS files by ad
 and find-and-replacing that name across the project. To the browser, this will look like a brand-new file and it will load it instead of using its outdated cached version. 
 
 **Back to starting post:**
-[+Developer Journal: Making the Dayty App](/stories/Developer_Journal_Making_the_Dayty_App.html) 
+[+Developer Journal: Making the Dayty App](/Developer-Journal-Making-the-Dayty-App) 
 

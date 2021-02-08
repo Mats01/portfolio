@@ -20,6 +20,8 @@ function SideContent() {
                         {article.name}
                     </h3>
                     <p><span className="tech_label">published: </span>{article.published}   </p>
+                    <p >{article.summary}</p>
+
 
 
                 </NavLink>

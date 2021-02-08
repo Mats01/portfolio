@@ -6,93 +6,78 @@ import reversedCitationsNeeded from './stories_markdown/Reversed_Citations_Neede
 import weekly from './stories_markdown/weekly.md';
 
 
-import pragmaticProgrammer from './books_markdown/The_Pragmatic_Programmer.md'
+
 
 
 export const stories = [
   {
-    name: "My 2015 summer project",
-    year: "2015",
-    story: pomodorowebapp,
-    link: "https://pomodorowebapp.appspot.com/",
-    tech: "Google App Engine (Python)",
-    path: "/my-2015-summer-project",
-    published: "Apr 23, 2020",
-    lastUpdated: "Apr 30, 2020",
-    summary: "About the pomodoro thing",
+    name: "Dayty: Phase 1",
+    story: dayty1,
+    path: "/Dayty-Phase-1",
+    published: "May 10, 2020",
+    lastUpdated: "May 10, 2020",
+    summary: "Defining models, choosing a CSS framework, populating the admin panel, and adding basic views",
 
   },
   {
-    name: "Reversed Citations Needed app",
-    year: "2019",
-    story: reversedCitationsNeeded,
-    link: "https://pomodorowebapp.appspot.com/",
-    tech: "JS",
-    path: "/Reversed-Citations-Needed-app",
-    published: "Apr 24, 2020",
-    lastUpdated: "Apr 24, 2020",
-    summary: "About RCN",
+    name: "Dayty: Phase 0 (Starting a Django project)",
+    story: dayty0,
+    path: "/Dayty-Phase-0",
+    published: "May 10, 2020",
+    lastUpdated: "May 10, 2020",
+    summary: "A Django project",
 
   },
   {
-    name: "Developer Journal Making the Dayty App",
-    year: "2020",
+    name: "Developer Journal: Making the Dayty App",
     story: dayty,
-    link: "https://pomodorowebapp.appspot.com/",
-    tech: "JS",
     path: "/Developer-Journal-Making-the-Dayty-App",
     published: "May 8, 2020",
     lastUpdated: "May 8, 2020",
-    summary: "Making dayty Making dayty Making dayty Making dayty Making dayty Making dayty Making dayty Making dayty ",
+    summary: "This story is the spring board off of which I'm jumping into making a brand new productivity app. I'll be writing the story in phases as follow up stories to this one",
 
   },
   {
-    name: "Dayty 0",
-    year: "2020",
-    story: dayty0,
-    link: "https://pomodorowebapp.appspot.com/",
-    tech: "Google App Engine (Python)",
-    path: "/dayty",
-    published: "2020.5.5",
-    lastUpdated: "2021.1.1",
-    summary: "Dayty 0",
+    name: "Reversed Citations Needed",
+    story: reversedCitationsNeeded,
+    path: "/Reversed-Citations-Needed",
+    published: "Apr 24, 2020",
+    lastUpdated: "Apr 24, 2020",
+    summary: "This is the story of how I built my first progressive web app and how I learned what a PWA even is.",
 
   },
   {
-    name: "Dayty 1",
-    year: "2020",
-    story: dayty1,
-    link: "https://pomodorowebapp.appspot.com/",
-    tech: "Google App Engine (Python)",
-    path: "/dayty",
-    published: "2020.5.5",
-    lastUpdated: "2021.1.1",
-    summary: "Dayty 1",
+    name: "My 2015 summer project",
+    story: pomodorowebapp,
+    path: "/my-2015-summer-project",
+    published: "Apr 23, 2020",
+    lastUpdated: "Apr 30, 2020",
+    summary: "A story about my first project, and how it got me started on being a coder.",
 
   },
 ];
 
 export const weeklyStory = {
-  
-    name: "Weekly shorts LIFO",
-    story: weekly,
-    path: "/weekly",
-    summary: "Dayty 1",
+
+  name: "Weekly shorts LIFO",
+  story: weekly,
+  path: "/weekly",
+  summary: "Here you can read what I am learnign each week... I'm using this like an accountability journal.",
 
 
 }
 
 export const books = [
 
-  {
-    name: "The Pragmatic Programmer",
-    author: "somebody",
-    story: pragmaticProgrammer,
-    path: "/pragmaric_programmer",
-    published: "2020.5.5",
-    lastUpdated: "2020.5.5",
+  // {
+  //   name: "The Pragmatic Programmer",
+  //   author: "somebody",
+  //   story: pragmaticProgrammer,
+  //   path: "/pragmaric_programmer",
+  //   published: "2020.5.5",
+  //   lastUpdated: "2020.5.5",
 
 
-  },
+  // },
 
 ]
