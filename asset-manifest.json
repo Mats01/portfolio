@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/home/static/css/main.ba2aa709.chunk.css",
+    "main.js": "/home/static/js/main.1836a587.chunk.js",
+    "main.js.map": "/home/static/js/main.1836a587.chunk.js.map",
+    "runtime-main.js": "/home/static/js/runtime-main.39523b15.js",
+    "runtime-main.js.map": "/home/static/js/runtime-main.39523b15.js.map",
+    "static/js/2.244d9a78.chunk.js": "/home/static/js/2.244d9a78.chunk.js",
+    "static/js/2.244d9a78.chunk.js.map": "/home/static/js/2.244d9a78.chunk.js.map",
+    "static/js/3.7681c804.chunk.js": "/home/static/js/3.7681c804.chunk.js",
+    "static/js/3.7681c804.chunk.js.map": "/home/static/js/3.7681c804.chunk.js.map",
+    "index.html": "/home/index.html",
+    "static/css/main.ba2aa709.chunk.css.map": "/home/static/css/main.ba2aa709.chunk.css.map",
+    "static/js/2.244d9a78.chunk.js.LICENSE.txt": "/home/static/js/2.244d9a78.chunk.js.LICENSE.txt",
+    "static/media/Dayty_Phase_0_Starting_a_Django_project.0a4aa48d.md": "/home/static/media/Dayty_Phase_0_Starting_a_Django_project.0a4aa48d.md",
+    "static/media/Dayty_Phase_1.60c9b566.md": "/home/static/media/Dayty_Phase_1.60c9b566.md",
+    "static/media/Developer_Journal_Making_the_Dayty_App.d853bace.md": "/home/static/media/Developer_Journal_Making_the_Dayty_App.d853bace.md",
+    "static/media/My_2015_summer_project.f742634d.md": "/home/static/media/My_2015_summer_project.f742634d.md",
+    "static/media/Reversed_Citations_Needed_app.53d170ff.md": "/home/static/media/Reversed_Citations_Needed_app.53d170ff.md",
+    "static/media/portrait_2020.a2dece7e.jpg": "/home/static/media/portrait_2020.a2dece7e.jpg",
+    "static/media/weekly.f9492696.md": "/home/static/media/weekly.f9492696.md"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39523b15.js",
+    "static/js/2.244d9a78.chunk.js",
+    "static/css/main.ba2aa709.chunk.css",
+    "static/js/main.1836a587.chunk.js"
+  ]
+}
