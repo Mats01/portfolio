@@ -10,6 +10,11 @@ import SideContent from './side_content/SideContent';
 
 
 function Home(props) {
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  })
+
   return (
     <div className="App">
 

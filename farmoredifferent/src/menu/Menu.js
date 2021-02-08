@@ -49,16 +49,16 @@ function Menu() {
           <nav role="navigation" className="navbar">
             <ul className="nav navbar-nav">
               <li>
-                <NavLink activeClassName="selected_link" to="/home">Home</NavLink>
+                <NavLink onClick={handleResize} activeClassName="selected_link" to="/home">Home</NavLink>
               </li>
               <li>
-                <NavLink activeClassName="selected_link" to="/contact">Contact</NavLink>
+                <NavLink onClick={handleResize} activeClassName="selected_link" to="/contact">Contact</NavLink>
               </li>
               <li>
-                <NavLink activeClassName="selected_link" to="/books">Book notes</NavLink>
+                <NavLink onClick={handleResize} activeClassName="selected_link" to="/books">Book notes</NavLink>
               </li>
               <li>
-                <NavLink activeClassName="selected_link" to="/weekly">Weekly LIFO</NavLink>
+                <NavLink onClick={handleResize} activeClassName="selected_link" to="/weekly">Weekly LIFO</NavLink>
               </li>
             </ul>
           </nav>
