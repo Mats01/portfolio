@@ -7,7 +7,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-     :root {
+    :root {
         --background-clolor: rgb(45, 47, 51);
         --text-color: white;
         --react-gray: #282c34;
@@ -52,6 +52,7 @@
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -111,7 +112,7 @@ h2.left {
 }
 
 .massive_title {
-    font-size: min(52pt, max(5vw, 1.9rem));
+    font-size: min(52pt, max(5vw, 1.7rem));
     font-family: 'Roboto Mono', monospace;
     text-align: left;
     margin-top: 3vh;
