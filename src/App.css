@@ -121,7 +121,7 @@ h2.left {
 .main_content {
     /* margin-left: 21vw; */
     /* width: 55vw; */
-    flex-shrink: 5;
+    grid-column: 1 / span 6;
     padding: 6px 18px;
 }
 
@@ -178,7 +178,8 @@ main {
 }
 
 .content_wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
     margin-left: 21vw;
     margin-top: 4vh;
 }
@@ -337,11 +338,14 @@ footer {
 }
 
 .contact_gird {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.contact_element {}
+.contact_element {
+    flex: 1 1 200px;
+    padding: 0 10px;
+}
 
 .contact_form_wrapper {
     display: block;

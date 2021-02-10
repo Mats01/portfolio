@@ -1,5 +1,5 @@
 .side_wrapper {
-    flex-grow: 1;
+    grid-column: 7 / span 10;
 }
 
 .side_content {
