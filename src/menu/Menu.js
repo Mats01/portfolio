@@ -63,7 +63,18 @@ function Menu() {
             </ul>
           </nav>
 
+          <footer>
+            <h1 class="footer_title">Far</h1>
+            <h1 class="footer_title">More</h1>
+            <h1 class="footer_title">Different</h1>
+            <p>Matej Butković<br />
+                        currently studying @ FER
+                    </p>
+          </footer>
+
         </div>
+
+
       }
 
     </div>
