@@ -1,5 +1,5 @@
 import React from 'react';
-import portrait from './portrait_2020.jpg'
+import portrait from './portrait_2021.jpg'
 import Menu from './menu/Menu';
 import SideContent from './side_content/SideContent';
 
