@@ -7,6 +7,7 @@ import ArticleList from './stories/ArticleList';
 import { stories, books } from './storiesMetadata';
 import Menu from './menu/Menu';
 import SideContent from './side_content/SideContent';
+import Projects from './projects/Projects';
 
 
 function Home(props) {
@@ -34,6 +35,8 @@ function Home(props) {
             </>
             :
             <>
+              <Projects />
+
               <h2 className="left">Stories:</h2>
               <ArticleList articles={stories} />
             </>
