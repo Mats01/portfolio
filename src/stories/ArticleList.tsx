@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import './Stories.css';
 
 interface Article {
   path: string;
@@ -16,40 +17,43 @@ interface ArticleListProps {
   book?: boolean;
 }
 
-class ArticleList extends React.Component<ArticleListProps> {
-  render() {
-    const { articles, book } = this.props;
-    const articleList = articles.map((article, index) => {
-      return (
+const ArticleList: React.FC<ArticleListProps> = ({ articles, book }) => {
+  return (
+    <div className="article-list">
+      {articles.map((article, index) => (
         <Link 
           key={index}
           to={article.path} 
-          style={{ textDecoration: 'none', color: 'inherit' }}
+          className="article-link"
         >
-          <div className="single_article">
-            {article.year && <h2>{article.year}</h2>}
-            <h3>{article.name}</h3>
-            {book ? (
-              <>
-                <p><span className="tech_label">finished: </span>{article.published}</p>
-                {article.author && <p className="article_summray">{article.author}</p>}
-              </>
-            ) : (
-              <>
-                <p>
-                  <span className="tech_label">published: </span>{article.published}
-                  <span className="tech_label">last updated: </span>{article.lastUpdated}
-                </p>
-                <p className="article_summray">{article.summary}</p>
-              </>
+          <article className="article-card">
+            <div className="article-header">
+              <h2 className="article-title">{article.name}</h2>
+              {article.year && <span className="article-year">{article.year}</span>}
+            </div>
+            
+            <div className="article-meta">
+              {book ? (
+                <>
+                  <span className="meta-item">Finished {article.published}</span>
+                  {article.author && <span className="meta-item author">by {article.author}</span>}
+                </>
+              ) : (
+                <>
+                  <span className="meta-item">Published {article.published}</span>
+                  <span className="meta-item">Updated {article.lastUpdated}</span>
+                </>
+              )}
+            </div>
+            
+            {!book && article.summary && (
+              <p className="article-summary">{article.summary}</p>
             )}
-          </div>
+          </article>
         </Link>
-      );
-    });
-    
-    return <>{articleList}</>;
-  }
-}
+      ))}
+    </div>
+  );
+};
 
 export default ArticleList;

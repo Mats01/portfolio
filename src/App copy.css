@@ -103,6 +103,7 @@ li {
 
 h2.left {
     text-align: left;
+    position: relative;
 }
 
 .page_404 {
@@ -261,6 +262,7 @@ footer {
 /* Place the timeline_container to the left */
 
 .left {
+    position: relative;
     left: 0;
 }
 

@@ -48,10 +48,7 @@ function Menu() {
                 <NavLink  className={({ isActive }) => isActive ? "selected_link" : ""} to="/contact">Contact</NavLink>
               </li>
               <li>
-                <NavLink  className={({ isActive }) => isActive ? "selected_link" : ""} to="/books">Book notes</NavLink>
-              </li>
-              <li>
-                <NavLink  className={({ isActive }) => isActive ? "selected_link" : ""} to="/weekly">Weekly LIFO</NavLink>
+                <NavLink  className={({ isActive }) => isActive ? "selected_link" : ""} to="/projects">Projects</NavLink>
               </li>
             </ul>
           </nav>
