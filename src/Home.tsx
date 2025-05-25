@@ -3,6 +3,7 @@ import React from 'react';
 import Menu from './menu/Menu';
 import ArticleList from './stories/ArticleList';
 import { stories } from './App';
+import Projects from './Projects';
 // import Projects from './projects/Projects';
 
 
@@ -22,6 +23,11 @@ function Home() {
               <h2 className="left">Stories:</h2>
               <ArticleList articles={stories} />
 
+              <h2>
+                Projects:
+              </h2>
+              <Projects />
+
         </div>
       </div>
     </div>
@@ -29,3 +35,4 @@ function Home() {
 }
 
 export default Home;
+

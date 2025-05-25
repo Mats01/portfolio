@@ -45,9 +45,6 @@ function Menu() {
                 <NavLink  className={({ isActive }) => isActive ? "selected_link" : ""} to="/home">Home</NavLink>
               </li>
               <li>
-                <NavLink  className={({ isActive }) => isActive ? "selected_link" : ""} to="/contact">Contact</NavLink>
-              </li>
-              <li>
                 <NavLink  className={({ isActive }) => isActive ? "selected_link" : ""} to="/projects">Projects</NavLink>
               </li>
             </ul>
@@ -58,8 +55,7 @@ function Menu() {
             <h1 className="footer_title">More</h1>
             <h1 className="footer_title">Different</h1>
             <br />
-            <p>Matej Butković<br />
-              currently studying @ FER
+            <p>Matej Butković
             </p>
           </footer>
         </div>

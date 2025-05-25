@@ -3,6 +3,7 @@ import './App.css';
 import './AppMobile.css';
 import Home from './Home';
 import Story from './stories/Story';
+import  { ProjectsPage } from './Projects';
 
 
 export type StoryType = {
@@ -88,6 +89,10 @@ function App() {
           element={<Home />} 
         />
 
+        <Route 
+          path="/projects" 
+          element={<ProjectsPage />} 
+        />
        
 
         <Route 
