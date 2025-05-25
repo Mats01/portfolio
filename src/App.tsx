@@ -57,7 +57,7 @@ export const stories: StoryType[] = [
   {
     name: "My 2015 summer project",
     story: "pomodorowebapp",
-    path: "/my_2015_summer_project",
+    path: "/My_2015_summer_project",
     published: "Apr 23, 2020",
     lastUpdated: "Apr 30, 2020",
     summary: "A story about my first project, and how it got me started on being a coder.",

@@ -1,10 +1,9 @@
 .blog_content {
-    margin: 8vh 2vw 2vh 2vw;
+    margin: 8vh auto 2vh auto;
     /* width: 50vw; */
-    grid-column: 1 / span 9;
+    grid-column: 1 / span 7;
     max-width: 720px;
     font-size: 1.1em;
-
 }
 
 .blog_content p {

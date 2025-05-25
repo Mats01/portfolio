@@ -24,7 +24,6 @@ function Story({ story }: {story: StoryType}) {
       <Menu />
       <div className="content_wrapper">
         <div className="blog_content">
-          <h1>{story.name}</h1>
           <ReactMarkdown>{markdown}</ReactMarkdown>
         </div>
       </div>
