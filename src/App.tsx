@@ -1,35 +1,70 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { HashRouter, Route, Routes, Navigate, Link } from 'react-router-dom';
+import './App.css';
+import './AppMobile.css';
+import Home from './Home';
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+interface StoryContent {
+  path: string;
+  name: string;
+  story: string;
+  published: string;
+  lastUpdated: string;
+  summary: string;
 }
 
-export default App
+function App() {
+  // const routesList = [...stories, ...books].map((story: StoryContent) => (
+  //   <Route 
+  //     key={story.path}
+  //     path={story.path} 
+  //     element={<Story content={story} />} 
+  //   />
+  // ));
+
+  return (
+    <HashRouter>
+      <Routes>
+
+
+        {/* <Route 
+          path="/contact" 
+          element={<Contact />} 
+        /> */}
+
+        <Route 
+          path="/home" 
+          element={<Home />} 
+        />
+
+       
+
+        <Route 
+          path="/" 
+          element={<Navigate to="/home" replace />} 
+        />
+
+        <Route 
+          path="*" 
+          element={
+            <div className="page_404">
+              <br />
+              <br />
+              <h1>404</h1>
+              <br />
+              <br />
+              <div>
+                <Link to="/">Back home</Link>
+              </div>
+              <div>
+                <Link to="/contact">Contact</Link>
+              </div>
+            </div>
+          } 
+        />
+      </Routes>
+    </HashRouter>
+  );
+}
+
+export default App;

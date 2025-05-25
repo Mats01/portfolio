@@ -1,0 +1,111 @@
+/* Media queries - Responsive timeline on screens less than 600px wide */
+
+@media screen and (max-width: 900px) {
+    .main_aside {
+        width: 220px;
+    }
+    .row.d-flex {
+        padding-left: 5px;
+        margin-left: 30px;
+        width: 99vw;
+        max-width: unset;
+    }
+    .contact_gird {
+        display: grid;
+        margin-top: 10vh;
+        grid-template-columns: 50% 50%;
+    }
+    .contact_main {
+        width: unset;
+        margin: unset;
+    }
+    .main_aside {
+        width: 220px;
+        /* display: none; */
+    }
+    #nav_hamburger {
+        display: unset;
+    }
+    .articles_wrapper {
+        margin: 3vh auto;
+        width: 100%;
+    }
+    .single_article {
+        max-width: unset;
+    }
+    .content_wrapper {
+        display: flex;
+        margin-left: 2vw;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    body {
+        max-width: 99vw;
+        font-size: 10px;
+    }
+    p {
+        font-size: 1rem;
+    }
+    pre {
+        font-size: 1rem;
+    }
+    .main_aside {
+        height: 100%;
+        position: fixed;
+        /* display: none; */
+        background-color: white;
+        z-index: 2;
+    }
+    .asside_wrapper {
+        height: 100vh;
+        position: fixed;
+    }
+    .row.d-flex {
+        max-width: calc(99vw);
+        margin: auto;
+    }
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+    /* Full-width timeline_containers */
+    .timeline_container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline_container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 18px;
+    }
+    /* Make all right timeline_containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+    .contact_form_wrapper {
+        width: 99vw;
+        padding: 10px;
+    }
+    .contact_gird {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    footer {
+        bottom: 8vh;
+    }
+    .articles_wrapper {}
+    .single_article {
+        width: 100%;
+        margin: 5px auto;
+    }
+}

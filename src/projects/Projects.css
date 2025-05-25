@@ -1,0 +1,23 @@
+.projects_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 10px;
+}
+
+.project_item {
+    width: 300px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 1.0rem;
+    margin: 12px auto;
+}
+
+.project_image {
+    height: 100px;
+    width: 100px;
+    margin: 10px auto;
+    border-radius: 16px;
+    background-position: center center;
+    background-size: cover;
+
+}
