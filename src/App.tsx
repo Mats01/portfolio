@@ -19,6 +19,14 @@ export type StoryType = {
 
 export const stories: StoryType[] = [
   {
+    name: "So what’s this AI thing then?",
+    story: "So_whats_this_AI_thing_then",
+    path: "/So_whats_this_AI_thing_then",
+    published: "May 25, 2025",
+    lastUpdated: "May 25, 2025",
+    summary: "Building my first AI app",
+  },
+  {
     name: "Dayty: Phase 1",
     story: "dayty1",
     path: "/Dayty_Phase_1",
