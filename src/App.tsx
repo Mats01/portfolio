@@ -18,13 +18,21 @@ export type StoryType = {
 
 
 export const stories: StoryType[] = [
+  // {
+  //   name: "So what’s this AI thing then?",
+  //   story: "So_whats_this_AI_thing_then",
+  //   path: "/So_whats_this_AI_thing_then",
+  //   published: "May 25, 2025",
+  //   lastUpdated: "May 25, 2025",
+  //   summary: "Building my first AI app",
+  // },
   {
-    name: "So what’s this AI thing then?",
-    story: "So_whats_this_AI_thing_then",
-    path: "/So_whats_this_AI_thing_then",
-    published: "May 25, 2025",
-    lastUpdated: "May 25, 2025",
-    summary: "Building my first AI app",
+    name: "I've Never Actually \"Vibe Coded\" (And Why That Matters)",
+    story: "ive_never_actually_vibe_coded_and_why_that_matters",
+    path: "/I_Dont_Vibe_Code",
+    published: "Jan 24, 2026",
+    lastUpdated: "Jan 24, 2026",
+    summary: "How AI coding tools are transforming software engineering—but not in the way you might think",
   },
   {
     name: "Dayty: Phase 1",
