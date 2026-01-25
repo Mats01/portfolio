@@ -8,6 +8,20 @@
 
 It's 2026, and I wanted to write down some thoughts on the current state of AI and how software engineering is looking right now—a kind of time capsule that I and maybe somebody else can look back on.
 
+## The Uncertainty Problem
+
+Here's the thing: it's really hard to know with any certainty how posterity will view all of this AI progress. The companies making the AI benefit enormously from making everybody believe that AI is super useful. This is why we're all genuinely uncertain about how useful it really is.
+
+One thing that's notable—and I'm not going to cite sources here—is that if you look at the actual data, there haven't been that many jobs lost, especially outside of tech. Outside the tech industry, AI has not been the disruptor that all the buzzwords and breathless articles would have you believe. We haven't seen a big uptick in layoffs. We haven't seen rising unemployment rates.
+
+Now, if you wanted to take the optimistic view, this is a good signal—you could be happy about it. But if you wanted to look at this more cynically, here's the take: this is a simple, hard-numbers way to say that these AIs are not that useful. They're not showing real economic usefulness in replacing tasks. If they could actually do tasks unaided, we would see people losing those jobs. But that's not happening.
+
+Tech layoffs are crazy right now, but those aren't necessarily related to AI—they're more likely corrections and weird stuff with investing cycles. The normal, outside-of-tech jobs don't seem to be that affected by AI.
+
+So consider this a checkpoint. Where are we in time right now? We are at a point where AI is very useful for coding—as we're going to see in the rest of this article—but apparently not as useful outside of coding. And I'm going to dive into how I use it, and why I don't think it's as universally transformative as the hype suggests.
+
+The spoiler: it's useful to coders because coders know how to make it useful to them. Other professions are not as well positioned to use what is essentially a free (or semi-free, or as we'll see, not really free) knowledge worker alongside you—one who will answer all the questions that make you more productive. It seems like those other jobs aren't even positioned in a way where being more productive matters that much, or where people are even looking for how to get more productive.
+
 ## The State of AI in 2026
 
 Looking at what AI has done right now after a lot of investments, from what I'm gathering and from my lived experience, the only place where AI has been able to deliver some monetary gains is actually software engineering. More than that, it's actual code—writing code. Engineering in every other industry is reportedly losing money when trying to apply AI to their problems.
@@ -43,6 +57,16 @@ So what I'm getting is a very big increase in speed. I'm still one developer. I'
 I would like to contrast this with how this works with vibe coding, which I have tried as well. When I have started completely new, this works fine. But this is because I actually now have low expectations on it. I'm not looking at the output as a software engineer. I'm looking at the output as: did I get a screen?
 
 When I get a screen that works, I'm not concerned whether the screen is very good. When I take a step back and think about intermediary steps, it did give me some stupid combinations of scrollable and unscrollable parts of the app, and they did look kind of weird until I jumped in and gave it very specific directions.
+
+## The Paradox: Smart and Dumb at the Same Time
+
+This brings me to something that's been on my mind a lot. When I see the AI solve one task amazingly well, I basically assign it human properties. I assume I'm talking to a very smart human, because only a very smart human could solve this problem in this way.
+
+But what I'm not actually seeing is that yes, it excels at this one task, but it could still perform very poorly on another task. And this isn't just across different domains—it's within the same domain. Even in the same area of life, like software engineering, the AI can at the same time be super dumb and also super smart.
+
+This is hard to wrap your head around because we were expecting AI to be smart in the same way humans are. Dumb humans are usually dumb in multiple areas of life—there's a consistency to human intelligence. But now we're getting AIs which can be brilliant at one coding task and terrible at a closely related one.
+
+This is something very important for anyone using these tools to understand. You have to manage your expectations. You have to manage your finances, because these models are not free, and deploying them in the wrong way could—as is happening to these non-tech firms—be very ruinous financially.
 
 ## Am I Really an Engineer Anymore?
 
@@ -96,6 +120,18 @@ And today we are fully moving away from this, running at a pace away from this i
 
 For the short term, and even maybe years—which is still short term—in the future, I think having an engineer is what we need, and I'm happy with my position. I think I'm going to be useful, and I think I'm going to be way more productive than before, and I'm going to be able to, as I described before, deliver way more code, way clearer code, and be more agile in the sense of nimbly moving around. Not in the framework, but looking down the barrel of marching time, I don't know how the landscape is going to look like, and I think a lot of jobs are looking to be replaced.
 
+## Are Jobs Going Away or Just Changing?
+
+Mike Hurley and Federico Viticci spoke about something relevant on [Connected 587](https://www.relay.fm/connected/587). They compared the emergence of AI tools to Excel for accountants or Squarespace for web development.
+
+The Excel for accountants story is that this didn't remove accountants. It just made them way more productive. And we still use accountants because they still have to have a lot of domain knowledge. But it's possible that there are fewer accountants, or maybe just more people get access to accounting jobs, or accounting is just more complicated now that we know that accountants can accomplish more. This doesn't really give you answers as much as it asks good questions to think about.
+
+The other example was Squarespace. Squarespace is, in a way, allowing non-developers to just make a website, just like Claude is now allowing you to make an app by just talking. But there are still a lot of developers. There are just more websites. And also, people still hire people to make websites because they don't want to use even the simple Squarespace. Maybe the tool itself isn't the problem—turning the idea of making it into reality is still a skill and something that people don't want to learn and don't want to have any knowledge of, or it's still too complicated to make some really complex stuff with Squarespace.
+
+And there are also Squarespace builders—people who you hire to make a Squarespace site for you, who then you will just keep running by just adjusting and stuff.
+
+So it's a good question. Mike said, I think: Is it that these jobs are going away or is it just changing? Maybe it's that these tools just move or adapt the job. It's not necessarily that the jobs go away.
+
 ## Why Hasn't AI Replaced Jobs Outside Software Engineering?
 
 The question is: why haven't the jobs outside of software engineering been replaced?
@@ -105,5 +141,19 @@ This could be the final chapter looking outside of software engineering. And I t
 Developers really need to understand what they are doing at a deep level and be very competent. And I think this is showing that if I were to use AI in other fields—like in sales or in clerk jobs, if I were some kind of clerk or whatever, or in the post office or some knowledge worker somewhere—I think I would be much faster thanks to AI.
 
 But I think this is not happening because maybe one part is that the managers are trying to make the AI be an employee, instead of being an augmentation to existing employees. But I also think existing employees in other fields are not nearly as accustomed to always learning new things, adapting, and using the technology—or even just thinking about efficiency and being very concerned about their own efficiency—as developers are.
+
+## The Boots-on-Ground Reality
+
+Here's the thing that really crystallizes all of this. When I'm coding and I'm trying to solve a real problem, I'm always super impressed with how smart the AI is. But actually, maybe I'm the one who is smart, and the AI is able to follow my precise directions to do great things together.
+
+Is the AI so smart on its own? Could it be left to run a small business? We've seen from the Trunk videos—it could not.
+
+This becomes obvious when I try to use AI for non-coding tasks. When I ask it something like "make me a plan for how I would market this," it just gives me super vague responses. "Oh, I would maybe think about posting on social media, and I would make a landing page." It's never able to ground itself to a realistic plan. It can't tell me: here's what you do on Tuesday, here's the specific email to send, here's the exact strategy with numbers.
+
+But when I'm coding with precise directions? It impresses me every time.
+
+The difference is that I know how to be precise when I'm coding. I know the vocabulary. I know what files to reference, what patterns to follow, what the edge cases are. I can give it the context it needs to succeed.
+
+Other professions don't have this same infrastructure of precision. They're not positioned to use a knowledge worker assistant because their work isn't structured in a way that lets them give precise, unambiguous directions. And maybe their jobs aren't even set up in a way where being more productive matters—or where people are even looking for ways to be more productive.
 
 So yeah, this is essentially what I'm thinking about.
