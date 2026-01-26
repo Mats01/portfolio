@@ -17,7 +17,7 @@ The current "best" model and where the state-of-the-art is is Claude Opus 4.5. I
 
 ## Brilliant and Stupid Simultaneously
 
-Some people dismiss AI as "just autocomplete" that is "just predicting the next word". They're grosely underestimating what's at stake. At my company, one person now does what previously required three. A year ago, I expected we'd bring someone on to help me. Instead, I got that help—from a model in the cloud.
+Some people dismiss AI as "just autocomplete" that is "just predicting the next word". They're grossly underestimating what's at stake. At my company, one person now does what previously required three. A year ago, I expected we'd bring someone on to help me. Instead, I got that help—from a model in the cloud.
 
 One thing is certain; AI is really hard to estimate. When AI solves a task brilliantly, I instinctively assign it human-like intelligence. Only a smart person could have done this, I think. But that's not what's actually happening. The AI can excel at one task and fail completely at a closely related one, even within the same domain. This breaks our mental model of intelligence. With humans, there's consistency, someone who struggles in one area usually struggles in related areas. AI doesn't work that way. You can't extrapolate from one success to predict another.
 
@@ -40,12 +40,12 @@ Now we're moving away from that, fast.
 
 For the short term—even a few years out—engineers are still necessary, and I'm comfortable with my position. 
 I'm more productive than ever, shipping more and cleaner code, more nimble in how I work. 
-And I definitely still feel like a software engineer, even when I type prompts in plain english and marvel at the code that has just appeared out of thin electrons in many many graphics cards somewhere. 
+And I definitely still feel like a software engineer, even when I type prompts in plain English and marvel at the code that has just appeared out of thin electrons in many many graphics cards somewhere. 
 
 The question is, how long will I still be needed? Could someone else do this without me? After watching a non-technical person attempt it: not today. I'm still necessary, but will this ever change? Assuming even linear improvement, it's not hard to imagine non-technical people shipping medium-complexity apps by prompting their way through the gotchas and edge cases.
 Looking further ahead, the landscape becomes impossible to predict. Many jobs seem vulnerable.
 
-On a recent episode of [Connected](https://www.relay.fm/connected/587) Myke and Federico discussed just this. What particularely made me think what the comparison of AI tools to Excel for accountants or Squarespace for web development.
+On a recent episode of [Connected](https://www.relay.fm/connected/587) Myke and Federico discussed just this. What particularly made me think was the comparison of AI tools to Excel for accountants or Squarespace for web development.
 
 Excel didn't eliminate accountants, it made them more productive. We still need accountants because the domain knowledge matters. Maybe there are fewer of them now, or maybe accounting just got more complex to match their new capabilities. Squarespace lets non-developers build websites, just as AI lets non-programmers build apps. But developers still exist. There are just more websites now. People still hire professionals because they don't want to learn Squarespace, or because complex work exceeds its capabilities. There are even "Squarespace builders" - people you hire to set up your Squarespace site.
 
@@ -74,9 +74,9 @@ Despite what the title says, I can't claim I've never vibe coded. I've tried it.
 
 When I've started completely fresh projects this way, it's fine—but only because my expectations are low. I'm not evaluating the output as an engineer. I'm just asking: did I get a screen that works?
 
-Looking back thought the commits of a small SwiftUI app I'd build from zero as a weekend project recently, the LLM gave me some bizarre combinations of scrollable and fixed elements, it definitely didn't think ahead on how more complex navigation could be added in the future, and it stuck buttons in some weird places, but I almost didn't even notice. This is because, while writing the prompt, I had no vision of how the resulting screen *should* even look like. I was basically ready do be delighted with wathere met me when I pressed Build. I was just happy there was now someting where minutes before there was nothing. 
+Looking back through the commits of a small SwiftUI app I'd built from zero as a weekend project recently, the LLM gave me some bizarre combinations of scrollable and fixed elements, it definitely didn't think ahead on how more complex navigation could be added in the future, and it stuck buttons in some weird places, but I almost didn't even notice. This is because, while writing the prompt, I had no vision of how the resulting screen *should* even look. I was basically ready to be delighted with whatever met me when I pressed Build. I was just happy there was now something where minutes before there was nothing. 
 
-It is important to recognise this was code I would in no way be happy with had I bothered reading it. I would not be able to maintain it going forward. But that is not what I needed it to be. I needed my small app to work and do it's one simple task, and it did.
+It is important to recognize this was code I would in no way be happy with had I bothered reading it. I would not be able to maintain it going forward. But that is not what I needed it to be. I needed my small app to work and do its one simple task, and it did.
 
 
 ## So why hasn't AI replaced jobs outside software engineering?
@@ -95,18 +95,18 @@ Other professions lack this infrastructure of precision. Their work isn't struct
 
 Part of the problem might be that managers try to make AI an employee rather than an augmentation ([this is not a good idea](https://www.youtube.com/watch?v=SpPhm7S9vsQ)), or it's just that workers in other fields aren't conditioned to think about productivity the way developers are. They're not looking for ways to be more efficient, their jobs may not even reward efficiency.
 
-In other words, it seems like non-coders are trying to use LLMs only in the "Vibe coding" mode, and not in the Plan --> Execute mode. Is this a fundamental limitation of the "fuzziness" of human systems or is this a temporary hurdle that will simply get solved when AI gets even better and doing what you mean insted of what you are asking remains to be seen. I for one am excitied to be living in the future.
+In other words, it seems like non-coders are trying to use LLMs only in the "Vibe coding" mode, and not in the Plan --> Execute mode. Is this a fundamental limitation of the "fuzziness" of human systems or is this a temporary hurdle that will simply get solved when AI gets even better and doing what you mean instead of what you are asking remains to be seen. I for one am excited to be living in the future.
 
 
 
 
 ## Apx. #1 When to write code?
 
-Even though the workflow I have described above works pretty well for me right now, there is a question of long term sustainability. Will I get *rusty* the less code I writre "by hand"? Will my grasp on the code-base slowly fade, and thus I won't be able to steer the AI towards the right solution when it goes off the rails. Will the codebase slowly rot from a thousand-and-one subtle bugs it introduces?
+Even though the workflow I have described above works pretty well for me right now, there is a question of long term sustainability. Will I get *rusty* the less code I write "by hand"? Will my grasp on the codebase slowly fade, and thus I won't be able to steer the AI towards the right solution when it goes off the rails. Will the codebase slowly rot from a thousand-and-one subtle bugs it introduces?
 
-There's also the financial reality. I'm based in Croatia, and I have kept a worried eye on the number of tokens fliying by this past few weeks since Opus 4.5 has dropped. All this AI companies seem to be offering a $200/mo plan for when you need to get real work done, and the reality is that here in Croatia this is a significant sum to ask your company for—not something you'd casually file under "tooling costs." It's a meaningful expense that needs to justify itself in productivity gains.
+There's also the financial reality. I'm based in Croatia, and I have kept a worried eye on the number of tokens flying by this past few weeks since Opus 4.5 has dropped. All this AI companies seem to be offering a $200/mo plan for when you need to get real work done, and the reality is that here in Croatia this is a significant sum to ask your company for—not something you'd casually file under "tooling costs." It's a meaningful expense that needs to justify itself in productivity gains.
 
-If I stopped writing code entirely and worked purely through prompts, I'd spend at least €100 monthly on Claude alone, even with the optimisations I've found.
+If I stopped writing code entirely and worked purely through prompts, I'd spend at least €100 monthly on Claude alone, even with the optimizations I've found.
 
 
 ## Apx. #2 Why Cursor Beats Claude Code
