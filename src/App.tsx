@@ -27,6 +27,14 @@ export const stories: StoryType[] = [
   //   summary: "Building my first AI app",
   // },
   {
+    name: "Is AI here now?",
+    story: "is_ai_here_now",
+    path: "/Is_AI_here_now",
+    published: "Jan 24, 2026",
+    lastUpdated: "Jan 24, 2026",
+    summary: "Why AI has only really transformed how coders work",
+  },
+  {
     name: "I've Never Actually \"Vibe Coded\" (And Why That Matters)",
     story: "ive_never_actually_vibe_coded_and_why_that_matters",
     path: "/I_Dont_Vibe_Code",
