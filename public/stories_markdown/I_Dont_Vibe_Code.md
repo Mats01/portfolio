@@ -17,7 +17,7 @@ The current "best" model and where the state-of-the-art is is Claude Opus 4.5. I
 
 ## Brilliant and Stupid Simultaneously
 
-Some people dismiss AI as "just autocomplete" that is "just predicting the next word". They're grosely underestimating what's at stake. At my company, one person now does what previously required three. We've entirely stopped looking for interns. A year ago, I expected we'd bring someone on to help me. Instead, I got that help—from a model in the cloud.
+Some people dismiss AI as "just autocomplete" that is "just predicting the next word". They're grosely underestimating what's at stake. At my company, one person now does what previously required three. A year ago, I expected we'd bring someone on to help me. Instead, I got that help—from a model in the cloud.
 
 One thing is certain; AI is really hard to estimate. When AI solves a task brilliantly, I instinctively assign it human-like intelligence. Only a smart person could have done this, I think. But that's not what's actually happening. The AI can excel at one task and fail completely at a closely related one, even within the same domain. This breaks our mental model of intelligence. With humans, there's consistency, someone who struggles in one area usually struggles in related areas. AI doesn't work that way. You can't extrapolate from one success to predict another.
 
@@ -42,7 +42,7 @@ For the short term—even a few years out—engineers are still necessary, and I
 I'm more productive than ever, shipping more and cleaner code, more nimble in how I work. 
 And I definitely still feel like a software engineer, even when I type prompts in plain english and marvel at the code that has just appeared out of thin electrons in many many graphics cards somewhere. 
 
-The question is, how long will I still be needed? Could someone else do this without me? After watching a non-technical person attempt it: not today. I'm still necessary, but will this ever change? Assuming even linear improvement, and it's not hard to imagine non-technical people shipping medium-complexity apps by prompting their way through the gotchas and edge cases.
+The question is, how long will I still be needed? Could someone else do this without me? After watching a non-technical person attempt it: not today. I'm still necessary, but will this ever change? Assuming even linear improvement, it's not hard to imagine non-technical people shipping medium-complexity apps by prompting their way through the gotchas and edge cases.
 Looking further ahead, the landscape becomes impossible to predict. Many jobs seem vulnerable.
 
 On a recent episode of [Connected](https://www.relay.fm/connected/587) Myke and Federico discussed just this. What particularely made me think what the comparison of AI tools to Excel for accountants or Squarespace for web development.
@@ -55,9 +55,7 @@ Are these jobs disappearing, or just changing? Maybe these tools will change the
 
 ## How I Actually Use AI for Coding
 
-Let me show you what precision looks like in practice.
-
-When I get a ticket, I think deeply about the problem first. I consider the codebase and decide how I would solve it. Then I explain my approach to Claude the same way I'd explain to a colleague what I'd done if I'd written the code myself.
+Here is how I actually use my 10 years of experience as a software engineer to get the best results out of putting the AI to work. When I get a ticket, I think deeply about the problem first. I consider the codebase and decide how I would solve it. Then I explain my approach to Claude the same way I'd explain to a colleague what I'd done if I'd written the code myself.
 
 I tell it which files we need to touch, referencing them by name. I explain that we need to replicate functionality from one place, modify these classes, add or change types. I'm specific.
 
@@ -85,7 +83,7 @@ It is important to recognise this was code I would in no way be happy with had I
 
 Here's what crystallizes everything for me. When I'm coding and solving real problems, I'm constantly impressed by how smart the AI seems. But when I try using it for non-coding tasks, the magic disappears.
 
-Maybe I'm the smart one, and the AI is just very good at following precise directions.
+Maybe I'm actually the smart one, and the AI is just very good at following precise directions.
 
 "Make me a marketing plan" yields vague platitudes: maybe post on social media, maybe make a landing page. It can't produce a realistic, grounded plan with specific actions and timelines.
 
@@ -96,6 +94,8 @@ The difference is that I know how to be precise in my domain. I have the vocabul
 Other professions lack this infrastructure of precision. Their work isn't structured for unambiguous direction-giving. A marketing manager can't point to `campaign_strategy.yaml` and say "replicate the Q3 approach but adjust the conversion targets." The vocabulary doesn't exist. The verifiable outputs don't exist.
 
 Part of the problem might be that managers try to make AI an employee rather than an augmentation ([this is not a good idea](https://www.youtube.com/watch?v=SpPhm7S9vsQ)), or it's just that workers in other fields aren't conditioned to think about productivity the way developers are. They're not looking for ways to be more efficient, their jobs may not even reward efficiency.
+
+In other words, it seems like non-coders are trying to use LLMs only in the "Vibe coding" mode, and not in the Plan --> Execute mode. Is this a fundamental limitation of the "fuzziness" of human systems or is this a temporary hurdle that will simply get solved when AI gets even better and doing what you mean insted of what you are asking remains to be seen. I for one am excitied to be living in the future.
 
 
 
