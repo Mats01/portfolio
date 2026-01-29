@@ -35,8 +35,7 @@
     }
     .content_wrapper {
         display: flex;
-        margin-left: 4vw;
-        margin-right: 4vw;
+        margin-left: 2vw;
         flex-direction: column;
     }
 }
